@@ -43,6 +43,7 @@
 
     &:after {
         border-bottom: 1px solid $yellow;
+        padding: 10px 0;
         display: block;
         content: '';
         transform: scaleX(0);
@@ -50,6 +51,8 @@
     }
 
     &:hover {
+        color: $yellow;
+
         &:after {
            transform: scaleX(.5);
         }

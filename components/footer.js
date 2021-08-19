@@ -14,24 +14,27 @@ const Footer = () => {
                             <a className={style.link}>home</a>
                         </Link>
                         <Link href="#">
-                            <a className={style.link}>The Hub</a>
+                            <a className={style.link}>articles</a>
+                        </Link>
+                        <Link href="#">
+                            <a className={style.link}>events</a>
+                        </Link>
+                        <Link href="#">
+                            <a className={style.link}>about us</a>
                         </Link>
                         <Link href="#">
                             <a className={style.link}>contact us</a>
                         </Link>
-                        <Link href="#">
-                            <a className={style.link}>facilities</a>
-                        </Link>
                     </div>
                     <div className={style.item}>
                         <Link href="#" className={style.link}>
-                            <a className={style.link}>Football</a>
+                            <a className={style.link}>terms</a>
                         </Link>
                         <Link href="#">
-                            <a className={style.link}>rugby</a>
+                            <a className={style.link}>hub hire</a>
                         </Link>
                         <Link href="#">
-                            <a className={style.link}>bowling</a>
+                            <a className={style.link}>privacy</a>
                         </Link>
                     </div>
                     <div className={style.item}>
