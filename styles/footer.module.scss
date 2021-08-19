@@ -1,0 +1,79 @@
+// Styling
+@import './var';
+@import './mixins';
+
+
+.top_footer {
+    height: 200px;
+    background-image: url('../public/Untitled.svg');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.footer {
+    background-color: $dark;
+}
+
+.container {
+    min-height: 300px;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    color: $light;
+    gap: 100px;
+    padding: 50px 0 100px 0;
+}
+
+.item {
+    flex: 1 1 0;
+    align-items: flex-start;
+}
+
+.link {
+    padding: 10px;
+    margin: 20px 0;
+    width: 100%;
+    text-decoration: none;
+    color: $light;
+    font-size: 1rem;
+    display: block;
+    text-transform: uppercase;
+    text-align: center;
+
+    &:after {
+        border-bottom: 1px solid $yellow;
+        display: block;
+        content: '';
+        transform: scaleX(0);
+        transition: transform 250ms ease-in-out;
+    }
+
+    &:hover {
+        &:after {
+           transform: scaleX(.5);
+        }
+    }
+}
+
+.heading {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.text {
+    font-size: 1rem;
+    line-height: 30px;
+    text-align: center;
+}
+
+.span {
+    color: $yellow;
+    font-weight: 600;
+}
+
+.link_2 {
+    color: $yellow;
+    font-weight: 600;
+    text-decoration: none;
+}

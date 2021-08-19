@@ -1,0 +1,25 @@
+// Imports
+@import "./mixins";
+@import "./var";
+
+
+html, body {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+p {
+    letter-spacing: 3px;
+    font-size: 1.8rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-transform: uppercase;
+    letter-spacing: 10px;
+}
+
+h3 {
+    font-size: 3rem;
+    color: $yellow;
+}
