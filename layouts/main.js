@@ -1,10 +1,10 @@
-// Components
-import Footer from '../components/footer'
+//components
 import TopNav from '../components/topnav'
+import Footer from '../components/footer'
 
-// Styling'
+//styling
 
-const LandingLayout = props => {
+const MainLayOut = props => {
     return (
         <div>
             <TopNav />
@@ -14,4 +14,4 @@ const LandingLayout = props => {
     )
 }
 
-export default LandingLayout
+export default MainLayOut

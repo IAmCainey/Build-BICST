@@ -10,30 +10,30 @@ const Footer = () => {
             <footer className={style.footer}>
                 <div className={style.container}>
                     <div className={style.item}>
-                        <Link href="#">
+                        <Link href="/">
                             <a className={style.link}>home</a>
                         </Link>
-                        <Link href="#">
+                        <Link href="/blog">
                             <a className={style.link}>articles</a>
                         </Link>
-                        <Link href="#">
+                        <Link href="/events">
                             <a className={style.link}>events</a>
                         </Link>
-                        <Link href="#">
-                            <a className={style.link}>about us</a>
+                        <Link href="/the-hub/about">
+                            <a className={style.link}>The Hub</a>
                         </Link>
-                        <Link href="#">
+                        <Link href="/contact">
                             <a className={style.link}>contact us</a>
+                        </Link>
+                        <Link href="/the-hub/hire">
+                            <a className={style.link}>hub hire</a>
                         </Link>
                     </div>
                     <div className={style.item}>
-                        <Link href="#" className={style.link}>
+                        <Link href="/terms" className={style.link}>
                             <a className={style.link}>terms</a>
                         </Link>
-                        <Link href="#">
-                            <a className={style.link}>hub hire</a>
-                        </Link>
-                        <Link href="#">
+                        <Link href="/privacy">
                             <a className={style.link}>privacy</a>
                         </Link>
                     </div>
@@ -48,7 +48,12 @@ const Footer = () => {
                         </p>
                     </div>
                 </div>
+                <div className={style.footer_note}>
+                    <p className={style.text}>developed by // <a className={style.link_2} href="https://paulcaine.co.uk" target="blank">Paul Caine</a>
+                    </p>
+                </div>
             </footer>
+
         </div>
     )
 }

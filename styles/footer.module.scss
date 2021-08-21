@@ -79,4 +79,21 @@
     color: $yellow;
     font-weight: 600;
     text-decoration: none;
+
+    &:hover {
+        color: $light;
+    }
+}
+
+.footer_note {
+    color: $light;
+    border-top: 2px solid $light;
+    padding: 20px 0;
+    width: 80%;
+    margin: auto;
+
+    .text {
+        font-size: 1rem;
+        text-align: left;
+    }
 }

@@ -1,17 +1,25 @@
+// Components
 import Head from 'next/head';
 import Link from 'next/link';
+
+
+// Layout
+import Layout from '../../layouts/main'
+import style from '../../styles/blog.module.scss'
+
 
 // data
 import { getAllPosts } from '../../lib/api';
 
+
 const Blog = ({ allPosts: { edges } }) => (
-    <div>
+    <Layout>
         <Head>
-            <title>A Wordpress buils!</title>
+            <title>News from - Barrow Island Community</title>
             <link rel='icon' href='/favicon.ico' />
         </Head>
 
-        <main>
+        <main className={style.container}>
             <div>
                 <section>
 
@@ -37,7 +45,7 @@ const Blog = ({ allPosts: { edges } }) => (
 
             </div>
         </main>
-    </div>
+    </Layout>
 );
 
 export default Blog;

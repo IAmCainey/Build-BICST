@@ -41,7 +41,7 @@ const LandingPage = () => {
       </section>
 
       <section id="sports" className={style.sports}>
-        <div className={style.container}>
+        <div className={style.sports_container}>
           <div className={style.item}>
             <h2>Marsh Hornets Rugby</h2>
             <p>Rugby from the age of 5 years old and our newly turfed pitch.</p>
@@ -96,7 +96,7 @@ const LandingPage = () => {
                 src="https://res.cloudinary.com/dw76zgmsl/image/upload/ar_1:1,b_rgb:262c35,bo_0px_solid_rgb:ffffff,c_fill,g_auto,r_max,w_1000/v1598037564/BICST/Site/People/IMG_0841-768x576_uspkgk.jpg"
                 width="200"
                 height="200"
-                alt="rob mcaloone"
+                alt="Jimmy Tongue"
               />
               <h4>Jimmy Tongue</h4>
               <span>Director & Chairman</span>
@@ -108,7 +108,7 @@ const LandingPage = () => {
                 src="https://res.cloudinary.com/dw76zgmsl/image/upload/c_thumb,w_200,g_face/v1598037564/BICST/Site/People/laura_t16pdv.jpg"
                 width="200"
                 height="200"
-                alt="rob mcaloone"
+                alt="rLaura Brookshaw"
               />
               <h4>Laura Brookshaw</h4>
               <span>Director Of Finance</span>
