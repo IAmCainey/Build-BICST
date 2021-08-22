@@ -7,3 +7,18 @@
     width: 80%;
     margin: 200px auto;
 }
+
+.pageTitle {
+    padding-bottom: 100px;
+}
+
+.cardGroup {
+    display: flex;    flex-direction: column;
+}
+
+.card {
+    margin: 20px;
+    padding: 20px;
+    border: 2px solid $dark;
+    border-radius: 8px;
+}

@@ -14,7 +14,6 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 14px 0;
         width: 80%;
         margin: auto    ;
     }
@@ -28,7 +27,7 @@
     color: $light;
     text-decoration: none;
     text-transform: uppercase;
-    padding-left: 36px;
+    padding: 36px 14px;
     font-weight: 700;
     letter-spacing: 5px;
 
@@ -39,8 +38,37 @@
 
 .dropdown {
     display: none;
-    
-    &:hover {
+    }
+
+    .dropdown_content {
         display: block;
+        background-color: $light;
+        z-index: 1;
+        text-align: center;
+        margin: auto;
+        border: solid 1px $light;
+        
+        .link {
+            color: $dark;
+            padding: 0;
+            display: block;
+            padding: 20px 30px;
+
+            &:hover {
+                background-color: $dark;
+                color: $yellow;
+                transition: all ease-in-out 0.3s;
+            }
+        }
     }
+
+    .drop {
+        position: relative;
+        display: inline-block;
+
+        &:hover .dropdown {
+            display: block;
+            position: absolute;
+            margin-top: 36px;
     }
+}

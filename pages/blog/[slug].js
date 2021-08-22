@@ -1,6 +1,10 @@
 import Head from 'next/head';
 import Link from 'next/link';
 
+// Styling
+import Layout from '../../layouts/main'
+import style from '../../styles/blog.module.scss'
+
 // data
 import { getAllPostsWithSlug, getPost } from '../../lib/api';
 
@@ -18,30 +22,30 @@ export default function Post({ postData }) {
     };
 
     return (
-        <div>
+        <Layout>
             <Head>
                 <title>{postData.title}</title>
                 <link rel='icon' href='/favicon.ico' />
             </Head>
 
-            <main>
+            <main className={style.container}>
                 <article>
                     <div>
                         <h1>{postData.title}</h1>
                         <p>{formatDate(postData.date)}</p>
                     </div>
                     <div
-                        className='post-content content'
+                        className={style.content}
                         dangerouslySetInnerHTML={{ __html: postData.content }}
                     />
                 </article>
                 <div>
                     <Link href='/blog'>
-                        <a>back to articles</a>
+                        <a><button className={style.btn}>Back to Articles</button></a>
                     </Link>
                 </div>
             </main>
-        </div>
+        </Layout>
     );
 }
 

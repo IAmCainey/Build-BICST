@@ -20,30 +20,31 @@ const Blog = ({ allPosts: { edges } }) => (
         </Head>
 
         <main className={style.container}>
-            <div>
-                <section>
+            <div className={style.pageTitle}>
+                <h1>Community Articles</h1>
+            </div>
+            <section className={style.cardGroup}>
 
-                    {edges.map(({ node }) => (
-                        <div key={node.id}>
-                            <div>
+                {edges.map(({ node }) => (
+                    <div key={node.id}>
+                        <div>
+                            <div className={style.card}>
+                                <h2>{node.title}</h2>
+                                <div
+
+                                    dangerouslySetInnerHTML={{ __html: node.excerpt }}
+                                />
                                 <div>
-                                    <h2>{node.title}</h2>
-                                    <div>
-                                        {node.excerpt}
-                                    </div>
-                                    <div>
-                                        <Link href={`/blog/${node.slug}`}>
-                                            <a><button>read more</button></a>
-                                        </Link>
-                                    </div>
-
+                                    <Link href={`/blog/${node.slug}`}>
+                                        <a><button className={style.btn}>read more</button></a>
+                                    </Link>
                                 </div>
+
                             </div>
                         </div>
-                    ))}
-                </section>
-
-            </div>
+                    </div>
+                ))}
+            </section>
         </main>
     </Layout>
 );

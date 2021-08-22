@@ -19,18 +19,18 @@ const topNav = () => {
                         </a>
                     </Link>
                     <Link href="#">
-                        <a className={style.link}>
+                        <a className={`${style.link} ${style.drop}`}>
                             the hub
                             <div className={style.dropdown}>
                                 <div className={style.dropdown_content}>
 
                                     <Link href="/the-hub/about">
-                                        <a>
+                                        <a className={style.link}>
                                             About us
                                         </a>
                                     </Link>
                                     <Link href="/the-hub/facilities">
-                                        <a>
+                                        <a className={style.link}>
                                             facilities
                                         </a>
                                     </Link>
@@ -39,13 +39,38 @@ const topNav = () => {
                         </a>
                     </Link>
                     <Link href="#">
-                        <a className={style.link}>
-                            sports
+                        <a className={`${style.link} ${style.drop}`}>
+                            Sports
+                            <div className={style.dropdown}>
+                                <div className={style.dropdown_content}>
+
+                                    <Link href="/the-hub/about">
+                                        <a className={style.link}>
+                                            Football
+                                        </a>
+                                    </Link>
+                                    <Link href="/the-hub/facilities">
+                                        <a className={style.link}>
+                                            Rugby
+                                        </a>
+                                    </Link>
+                                </div>
+                            </div>
                         </a>
                     </Link>
                     <Link href="#">
-                        <a className={style.link}>
-                            groups
+                        <a className={`${style.link} ${style.drop}`}>
+                            Groups
+                            <div className={style.dropdown}>
+                                <div className={style.dropdown_content}>
+
+                                    <Link href="/the-hub/about">
+                                        <a className={style.link}>
+                                            dancing
+                                        </a>
+                                    </Link>
+                                </div>
+                            </div>
                         </a>
                     </Link>
                     <Link href="/events">
