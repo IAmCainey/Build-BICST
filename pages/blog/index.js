@@ -34,6 +34,9 @@ const Blog = ({ allPosts: { edges } }) => (
 
                                     dangerouslySetInnerHTML={{ __html: node.excerpt }}
                                 />
+                                <p>
+                                    Author : <span>paul caine</span>
+                                </p>
                                 <div>
                                     <Link href={`/blog/${node.slug}`}>
                                         <a><button className={style.btn}>read more</button></a>
