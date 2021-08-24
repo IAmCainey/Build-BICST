@@ -32,7 +32,8 @@
     letter-spacing: 5px;
 
     &:hover {
-        color: $yellow;
+        color: $dark;
+        background-color: white;
     }
 }
 
@@ -42,11 +43,10 @@
 
     .dropdown_content {
         display: block;
-        background-color: $light;
+        background-color: white;
         z-index: 1;
         text-align: center;
         margin: auto;
-        border: solid 1px $light;
         
         .link {
             color: $dark;
@@ -70,5 +70,7 @@
             display: block;
             position: absolute;
             margin-top: 36px;
+            transition: all ease-in-out 0.3s;
+            left: 0;
     }
 }
