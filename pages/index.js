@@ -11,6 +11,9 @@ import Head from 'next/head'
 import Link from 'next/link'
 import Image from 'next/image'
 
+function scroll() {
+  document.getElementById('sports').scrollInToView()
+}
 
 const LandingPage = () => {
   return (
@@ -32,6 +35,8 @@ const LandingPage = () => {
           <div>
           </div>
         </div>
+
+
 
         <Link href="#sports">
           <a>
