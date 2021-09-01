@@ -35,7 +35,7 @@ const Blog = ({ allPosts: { edges } }) => (
                                     dangerouslySetInnerHTML={{ __html: node.excerpt }}
                                 />
                                 <p>
-                                    Author : <span>paul caine</span>
+                                    Author // Paul
                                 </p>
                                 <div>
                                     <Link href={`/blog/${node.slug}`}>
