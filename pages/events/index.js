@@ -29,6 +29,7 @@ export default function aboutTheHub(props) {
             </Head>
             <section id="about">
                 <h1>Hub Events</h1>
+                <h4>Coming Soon</h4>
 
                 <div className={style.content}>
 
