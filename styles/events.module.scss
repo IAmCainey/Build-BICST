@@ -1,0 +1,24 @@
+@import './mixins';
+@import './var';
+
+
+.content {
+    margin: 100px auto;
+    position: relative;
+}
+
+.date {
+    background-color: $yellow;
+    padding: 5px 10px;
+    color: $dark;
+    font-weight: 600;
+    letter-spacing: 3px;
+    position: absolute;
+    right: 0;
+}
+
+.body {
+    margin: 50px 0;
+    border-top: 2px solid $yellow;
+    padding: 20px 0
+}

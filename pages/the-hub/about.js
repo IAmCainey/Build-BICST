@@ -1,4 +1,5 @@
 import Layout from '../../layouts/main'
+
 const aboutTheHub = () => {
     return (
         <Layout>
