@@ -44,14 +44,19 @@ const topNav = () => {
                             <div className={style.dropdown}>
                                 <div className={style.dropdown_content}>
 
-                                    <Link href="/the-hub/about">
+                                    <Link href="/sports/football">
                                         <a className={style.link}>
                                             Football
                                         </a>
                                     </Link>
-                                    <Link href="/the-hub/facilities">
+                                    <Link href="/sports/rugby">
                                         <a className={style.link}>
                                             Rugby
+                                        </a>
+                                    </Link>
+                                    <Link href="/sports/bowling">
+                                        <a className={style.link}>
+                                            Bowling
                                         </a>
                                     </Link>
                                 </div>
@@ -64,9 +69,9 @@ const topNav = () => {
                             <div className={style.dropdown}>
                                 <div className={style.dropdown_content}>
 
-                                    <Link href="/the-hub/about">
+                                    <Link href="/groups/islanders">
                                         <a className={style.link}>
-                                            dancing
+                                            Islanders
                                         </a>
                                     </Link>
                                 </div>
