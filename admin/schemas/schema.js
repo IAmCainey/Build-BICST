@@ -13,23 +13,6 @@ export default createSchema({
   types: schemaTypes.concat([
     /* Your types here! */
     {
-      title: "Settings",
-      name: "settings",
-      type: "document",
-      fields: [
-        {
-          title: "Website Name",
-          name: "name",
-          type: "string",
-        },
-        {
-          title: "Websites TagLine",
-          name: "tag",
-          type: "string",
-        },
-      ],
-    },
-    {
       title: "Events",
       name: "events",
       type: "document",
@@ -58,6 +41,11 @@ export default createSchema({
           name: "publishedAt",
           type: "date",
         },
+        {
+          title: "Hero Image",
+          name: "heroImage",
+          type: "image",
+        }
       ],
     },
   ]),

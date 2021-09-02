@@ -1,3 +1,7 @@
+// Next imports
+import Head from 'next/head'
+import Link from 'next/link'
+
 // Styling
 import style from '../../styles/events.module.scss'
 import Layout from '../../layouts/main'
@@ -7,7 +11,8 @@ import Layout from '../../layouts/main'
 import { groq } from "next-sanity";
 import { getClient } from "../../utils/sanity";
 
-const query = groq`*[_type == "events"]{
+
+const query = groq`*[_type == "events"] | order(publishedAt asc) {
     title,
     _updatedAt,
     publishedAt,
@@ -19,6 +24,9 @@ export default function aboutTheHub(props) {
     const events = props.events[0];
     return (
         <Layout>
+            <Head>
+                <title>Community Events - BICST</title>
+            </Head>
             <section id="about">
                 <h1>Hub Events</h1>
 
