@@ -34,6 +34,11 @@ const topNav = () => {
                                             facilities
                                         </a>
                                     </Link>
+                                    <Link href="/the-hub/hire">
+                                        <a className={style.link}>
+                                            hall hire
+                                        </a>
+                                    </Link>
                                 </div>
                             </div>
                         </a>
