@@ -23,3 +23,11 @@ h3 {
     font-size: 3rem;
     color: $yellow;
 }
+
+.flex {
+    display: flex;
+    flex: 1 1 0;
+    gap: 100px;
+    padding: 100px 0;
+
+}
