@@ -4,6 +4,9 @@ import createSchema from 'part:@sanity/base/schema-creator'
 // Then import schema types from any plugins that might expose them
 import schemaTypes from 'all:part:@sanity/base/schema-type'
 
+import events from './events'
+import articles from './articles'
+
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
   // We name our schema
@@ -12,41 +15,9 @@ export default createSchema({
   // to the ones provided by any plugins that are installed
   types: schemaTypes.concat([
     /* Your types here! */
-    {
-      title: "Events",
-      name: "events",
-      type: "document",
-      fields: [
-        {
-          title: "Title",
-          name: "title",
-          type: "string",
-        },
-        {
-          title: "Slug",
-          name: "slug",
-          type: "slug",
-          options: {
-            source: "title",
-            maxLength: "96",
-          },
-        },
-        {
-          title: "Event Content",
-          name: "content",
-          type: "text",
-        },
-        {
-          title: "Published At",
-          name: "publishedAt",
-          type: "date",
-        },
-        {
-          title: "Hero Image",
-          name: "heroImage",
-          type: "image",
-        }
-      ],
-    },
+
+    events,
+    articles
+
   ]),
 })
