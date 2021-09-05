@@ -6,7 +6,7 @@ const aboutTheHub = () => {
     return (
         <Layout>
             <section id="about">
-                <h1>About The Community</h1>
+                <h2>About The Community</h2>
 
                 <p>
                     All about <b>Barrow Island Community Sports Trust</b>.
