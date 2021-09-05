@@ -1,3 +1,5 @@
+// Components
+import Head from 'next/head'
 
 // Styling
 import Layout from '../../layouts/main'
@@ -5,11 +7,14 @@ import Layout from '../../layouts/main'
 const aboutTheHub = () => {
     return (
         <Layout>
+            <Head>
+                <title>Barrow Island Community Sports Trust</title>
+            </Head>
             <section id="about">
-                <h2>About The Community</h2>
+                <h2>About barrow island community sports trust</h2>
 
                 <p>
-                    All about <b>Barrow Island Community Sports Trust</b>.
+                    All about <b>Barrow Island Community Sports Trust,</b> from Community to a sporting centre, we cover it all..
                 </p>
                 <p>
                     Established in 2015 this Sports Trust was founded by Rob McAloone to ensure future generations on <b>Barrow Island</b> have a venue in which they are able to participate in a variety of sports as well as the use of a safe, warm Community Centre which may provide new skills as well as a venue for activities.

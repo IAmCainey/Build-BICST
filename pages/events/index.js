@@ -25,7 +25,7 @@ export default function aboutTheHub(props) {
     return (
         <Layout>
             <Head>
-                <title>Community Events - BICST</title>
+                <title>Community Events @ BICST</title>
             </Head>
             <section id="about">
                 <h1>Hub Events</h1>
