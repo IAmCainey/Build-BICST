@@ -1,6 +1,7 @@
 // Components
 import Link from 'next/link'
 
+// Styling
 import style from '../styles/footer.module.scss'
 
 const Footer = () => {
