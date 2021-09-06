@@ -3,9 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "concurrently \"next dev\" \"cd admin && sanity start\"",
-    "build": "echo 'Building Sanity to public/admin...' && cd admin && sanity build ../public/admin -y && cd .. &&  cross-env NODE_ENV=production next build",
+    "dev": "next",
+    "build": "next build",
     "start": "next start",
+    "export": "npm run build && next export",
     "lint": "next lint"
   },
   "dependencies": {
