@@ -1,0 +1,11 @@
+@import './mixins';
+@import './var';
+
+
+.hero {
+    background-color: $dark;
+}
+
+.title {
+    color: $light;
+}
