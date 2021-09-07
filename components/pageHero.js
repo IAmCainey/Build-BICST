@@ -6,7 +6,7 @@ const pageHero = () => {
     return (
         <section className={style.hero}>
             <div className={style.container}>
-                <h1>page title</h1>
+                <h1 className={style.title}></h1>
                 <span>page description</span>
             </div>
         </section>

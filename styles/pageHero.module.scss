@@ -4,6 +4,14 @@
 
 .hero {
     background-color: $dark;
+    min-height: 300px;
+    margin-top: 92px;
+    padding: 50px 0;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
 }
 
 .title {

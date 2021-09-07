@@ -4,6 +4,9 @@ import Head from 'next/head'
 // Styling
 import Layout from '../../layouts/main'
 
+const title = 'About the hub'
+const description = 'The hub a warn community ran centre for all to enjoy'
+
 const aboutTheHub = () => {
     return (
         <Layout>
