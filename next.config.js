@@ -1,8 +1,10 @@
 module.exports = {
   images: {
-    domains: ['res.cloudinary.com'],
-    rewrites: () => [STUDIO_REWRITE],
+    domains: ['res.cloudinary.com',
+      'images.unsplash.com',
+    ],
   },
+  rewrites: () => [STUDIO_REWRITE],
 
   reactStrictMode: true,
 };

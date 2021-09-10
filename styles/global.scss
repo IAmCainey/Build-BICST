@@ -36,3 +36,12 @@ h3 {
         flex: 1 1 33%;
     }
 }
+
+
+.img-placeholder-long {
+    background-color: $dark;
+    width: 100%;
+    min-height: 200px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.123);
+    margin: 100px 0;
+}
