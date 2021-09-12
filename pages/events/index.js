@@ -8,21 +8,17 @@ import Layout from '../../layouts/main'
 
 
 // Sanity imports
-import { groq } from "next-sanity";
-import { getClient } from "../../utils/sanity";
+import sanity from '../../lib/sanity'
+
+const query = `*[_type == "events "] {
+    title
+}
+`;
 
 
-const query = groq`*[_type == "events"] | order(publishedAt asc) {
-    title,
-    _updatedAt,
-    publishedAt,
-    content,
-    slug,
-  }`;
-
-export default function aboutTheHub(props) {
-    const events = props.events[0];
+const Events = ({ events }) => {
     return (
+
         <Layout>
             <Head>
                 <title>Community Events @ BICST</title>
@@ -31,29 +27,28 @@ export default function aboutTheHub(props) {
                 <h1>Hub Events</h1>
                 <h4>Coming Soon</h4>
 
-                <div className={style.content}>
-
-                    <h4>{events.title}</h4>
-                    <span className={style.date}>{events.publishedAt}</span>
-
-                    <p className={style.body}>
-                        {events.content}
-                    </p>
-
-                </div>
+                <ul className={style.content}>
+                    {events.map(event => (
+                        <li key={event._id}>
+                            <Link href="/events/[id" as={`/events/${event._id}`}>
+                                <a>
+                                    {events.title}
+                                </a>
+                            </Link>
+                        </li>
+                    ))}
+                </ul>
 
             </section>
         </Layout>
-    );
+    )
 }
 
-export async function getStaticProps() {
-    let response = await getClient().fetch(query);
-
+export const getStaticProps = async () => {
+    const events = await sanity.fetch(query);
     return {
-        props: {
-            events: response || null,
-        },
-        revalidate: 5,
-    };
+        props: { events }
+    }
 }
+
+export default Events
