@@ -5,6 +5,7 @@ import Head from 'next/head'
 // Styling
 import Layout from '../../layouts/main'
 
+const pageTitle = `The Hubs Fasilities`
 
 const aboutTheHub = () => {
     return (

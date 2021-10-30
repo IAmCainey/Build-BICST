@@ -6,7 +6,9 @@ import Footer from '../components/footer'
 // Styling
 import style from '../styles/layout.module.scss'
 
+
 const MainLayOut = props => {
+
     return (
         <div>
             <TopNav />

@@ -2,12 +2,13 @@
 import style from '../styles/pageHero.module.scss'
 
 
-const pageHero = () => {
+const pageHero = (props) => {
+
     return (
         <section className={style.hero}>
             <div className={style.container}>
                 <h1 className={style.title}></h1>
-                <span>page description</span>
+                <span></span>
             </div>
         </section>
     )
