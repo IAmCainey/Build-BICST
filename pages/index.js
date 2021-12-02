@@ -19,7 +19,7 @@ const LandingPage = () => {
   return (
     <Layout>
       <Head>
-        <title>Barrow Communityy Sports Trust</title>
+        <title>Barrow Community Sports Trust</title>
       </Head>
 
       {/* <Nav /> */}
