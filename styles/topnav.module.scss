@@ -19,8 +19,17 @@
     }
 }
 
-.h4 {
-    color: $light;
+.titleLink {
+    text-decoration: none;
+    font-size: 1.8rem;
+
+    .h4 {
+        color: $yellow;
+        &:hover {
+            color: $light;
+        }
+    }
+
 }
 
 .link {

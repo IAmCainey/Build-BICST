@@ -10,7 +10,11 @@ const topNav = () => {
         <nav className={style.navbar}>
             <div className={style.container}>
                 <div>
-                    <h4 className={style.h4}>BICST</h4>
+                    <Link href="/">
+                        <a className={style.titleLink}>
+                            <h4 className={style.h4}>BICST</h4>
+                        </a>
+                    </Link>
                 </div>
                 <div>
                     <Link href="/">
