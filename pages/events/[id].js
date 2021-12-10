@@ -11,6 +11,9 @@ import Layout from '../../layouts/main'
 const EventDetails = ({ event }) => {
     return (
         <Layout>
+            <Head>
+                <title>BICST - {event.title}</title>
+            </Head>
             <h1>{event.title}</h1>
             <strong>{event.date} | {event.time}</strong>
             <p>
