@@ -13,7 +13,6 @@ const description = 'TBarrow Island Communiy Sports Trust events.'
 
 
 export default function Events({ events }) {
-    console.log({ events })
     return (
         <Layout>
             <Head>
