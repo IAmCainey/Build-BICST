@@ -6,19 +6,17 @@ import Footer from '../components/footer'
 // Styling
 import style from '../styles/layout.module.scss'
 
-
-const MainLayOut = props => {
-
+export default function MainLayOut(props) {
     return (
-        <div>
+
+        <>
             <TopNav />
             <PageHero />
             <div className={style.container}>
                 {props.children}
             </div>
             <Footer />
-        </div>
+        </>
+
     )
 }
-
-export default MainLayOut
