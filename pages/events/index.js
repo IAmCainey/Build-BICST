@@ -7,9 +7,10 @@ import Link from 'next/link'
 
 // Styling
 import Layout from '../../layouts/main'
+import style from '../../styles/cards.module.scss'
 
 const title = 'BICST - Hub Events'
-const description = 'TBarrow Island Communiy Sports Trust events.'
+const description = 'Barrow Island Communiy Sports Trust events.'
 
 
 export default function Events({ events }) {
@@ -20,15 +21,24 @@ export default function Events({ events }) {
             </Head>
             <h2>Events</h2>
 
-            <div>
-                {events.map((event) => (
-                    <Link key={event.id} href={`/events/${event.id}`}>
-                        <a>
-                            {event.title}
-                        </a>
-                    </Link>
-                ))}
-            </div>
+
+            {events.map((event) => (
+
+                <div key={event.id} className={style.cards}>
+                    <div className={style.card}>
+
+                        <h4>{event.title}</h4>
+                        <strong>{event.date}</strong>
+                        <p>{event.description}</p>
+                        <Link href={`/events/${event.id}`}>
+                            <a className="btn">
+                                View Event
+                            </a>
+                        </Link>
+                    </div>
+                </div>
+
+            ))}
         </Layout>
     )
 }
