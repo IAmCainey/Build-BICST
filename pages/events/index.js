@@ -7,7 +7,7 @@ import Link from 'next/link'
 
 // Styling
 import Layout from '../../layouts/main'
-import style from '../../styles/cards.module.scss'
+import style from '../../styles/events.module.scss'
 
 const title = 'BICST - Hub Events'
 const description = 'Barrow Island Communiy Sports Trust events.'
@@ -21,24 +21,28 @@ export default function Events({ events }) {
             </Head>
             <h2>Events</h2>
 
+            <div className="container">
 
-            {events.map((event) => (
+                {events.map((event) => (
 
-                <div key={event.id} className={style.cards}>
-                    <div className={style.card}>
+                    <div key={event.id}>
+                        <div className={style.events}>
+                            <div className={style.event}>
 
-                        <h4>{event.title}</h4>
-                        <strong>{event.date}</strong>
-                        <p>{event.description}</p>
-                        <Link href={`/events/${event.id}`}>
-                            <a className="btn">
-                                View Event
-                            </a>
-                        </Link>
+                                <h4>{event.title}</h4>
+                                <strong className={style.date}>Event Date = {event.date}</strong>
+                                <p>{event.description}</p>
+                                <Link href={`/events/${event.id}`}>
+                                    <a className={style.btn}>
+                                        View Event
+                                    </a>
+                                </Link>
+                            </div>
+                        </div>
                     </div>
-                </div>
 
-            ))}
+                ))}
+            </div>
         </Layout>
     )
 }

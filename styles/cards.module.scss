@@ -5,15 +5,14 @@
 
 .cards {
     display: flex;
-    flex: 1 1 0;
+    flex: 1;
     gap: 20px;
+    justify-content: space-between;
+    text-align: center;
 
     .card {
-        border: solid $dark 1px;
         padding: 20px;
-        border-radius: 8px;
-        background-color: white;
-        box-shadow: 0 0 5px rgba(0, 0, 0, 0.281);
+    
 
         .img {
             border-radius: 100%;
