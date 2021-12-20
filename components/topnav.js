@@ -78,11 +78,7 @@ const topNav = () => {
                             <div className={style.dropdown}>
                                 <div className={style.dropdown_content}>
 
-                                    <Link href="/groups/islanders">
-                                        <a className={style.link}>
-                                            Islanders
-                                        </a>
-                                    </Link>
+
                                 </div>
                             </div>
                         </a>
