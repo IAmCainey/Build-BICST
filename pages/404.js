@@ -1,6 +1,7 @@
 // Components
-import Link from 'next/link'
 import Head from 'next/head'
+
+import Router from 'next/router'
 
 // Styling
 import style from '../styles/error.module.scss'
@@ -14,12 +15,8 @@ export default function Custom404() {
                 <h4>This page your looking for, can not be found</h4>
                 <p>Go back, do not pass go</p>
 
+                <button className="btn" onClick={() => Router.back()}> Go Back</button>
 
-                <Link href='/'>
-                    <a className={style.btn}>
-                        Back I Tell You
-                    </a>
-                </Link>
             </div>
         </div>
     )
