@@ -1,3 +1,10 @@
 @import './mixins';
 @import './var';
 
+
+.sports {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: 20px;
+}
