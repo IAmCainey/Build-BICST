@@ -52,15 +52,9 @@ const topNav = () => {
                             Sports
                         </a>
                     </Link>
-                    <Link href="#">
+                    <Link href="/groups">
                         <a className={`${style.link} ${style.drop}`}>
                             Groups
-                            <div className={style.dropdown}>
-                                <div className={style.dropdown_content}>
-
-
-                                </div>
-                            </div>
                         </a>
                     </Link>
                     <Link href="/events">
