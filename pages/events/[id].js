@@ -4,6 +4,7 @@ import { supabase } from "../../utils/supabase"
 // Components
 import Head from 'next/head'
 import Link from 'next/link'
+import Router from 'next/router'
 
 // Styling
 import Layout from '../../layouts/main'
@@ -19,6 +20,8 @@ const EventDetails = ({ event }) => {
             <p>
                 {event.body}
             </p>
+
+            <button className="btn" onClick={() => Router.back()}> Go Back</button>
         </Layout>
     )
 }
