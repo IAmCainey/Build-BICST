@@ -4,6 +4,7 @@ import Link from 'next/link'
 
 // Styling
 import Layout from '../../layouts/main'
+import style from '../../styles/bookings.module.scss'
 
 const title = 'BICST - Hub Hire Booking'
 
@@ -15,8 +16,36 @@ export default function Bookings() {
                 <title>{title}</title>
             </Head>
 
-            <div>
-                <h2>Hub Booking Form</h2>
+            <div className='flex'>
+                <div>
+                    <h2>Hub Booking Form</h2>
+                </div>
+
+                <div>
+                    <form action="" className={style.form}>
+                        <label htmlFor="">full name</label>
+                        <input type="text" name="fullName" id="" />
+
+                        <label htmlFor="">email address</label>
+                        <input type="email" name="email" id="" />
+
+                        <label htmlFor="">questions / message / notes</label>
+                        <textarea name="message" id="" cols="30" rows="10"></textarea>
+
+                        <label htmlFor="">date</label>
+                        <input type="date" name="date" id="" />
+
+                        <label htmlFor="">start time</label>
+                        <input type="time" name="time" id="" />
+
+                        <label htmlFor="">finish time</label>
+                        <input type="time" name="time" id="" />
+                        <div className="flex">
+                            <input type="submit" value="submit" className='btn' />
+                            <input type="reset" value="reset form" className='btn' />
+                        </div>
+                    </form>
+                </div>
             </div>
         </Layout>
     )

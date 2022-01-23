@@ -1,0 +1,10 @@
+// Imports
+@import './mixins';
+@import './var';
+
+.form {
+    display: flex;
+    flex-direction: column;
+    max-width: auto;
+}
+
