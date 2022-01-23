@@ -19,6 +19,7 @@ export default function Bookings() {
             <div className='flex'>
                 <div>
                     <h2>Hub Booking Form</h2>
+                    <p>please use the form only for booking the hub</p>
                 </div>
 
                 <div>
