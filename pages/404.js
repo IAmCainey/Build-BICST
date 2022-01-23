@@ -10,6 +10,9 @@ import style from '../styles/error.module.scss'
 export default function Custom404() {
     return (
         <div className={style.container}>
+            <Head>
+                <title>BICST - Error 404, not found</title>
+            </Head>
             <div>
                 <h1 className={style.title}><span className={style.span}>error</span> | 404</h1>
                 <h4>This page your looking for, can not be found</h4>
