@@ -23,7 +23,7 @@ export default function Bookings() {
                 </div>
 
                 <div>
-                    <form action="" className={style.form}>
+                    {/* <form action="" className={style.form}>
                         <label htmlFor="">full name</label>
                         <input type="text" name="fullName" id="" />
 
@@ -45,7 +45,9 @@ export default function Bookings() {
                             <input type="submit" value="submit" className='btn' />
                             <input type="reset" value="reset form" className='btn' />
                         </div>
-                    </form>
+                    </form> */}
+
+                    <iframe src="https://koalendar.com/e/hub-booking-form?embed=true" width="100%" height="800px" frameborder="0"></iframe>
                 </div>
             </div>
         </Layout>
