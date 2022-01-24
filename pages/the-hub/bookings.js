@@ -47,7 +47,7 @@ export default function Bookings() {
                         </div>
                     </form> */}
 
-                    <iframe src="https://koalendar.com/e/hub-booking-form?embed=true" width="100%" height="800px" frameborder="0"></iframe>
+                    <iframe src="https://koalendar.com/e/hub-booking-form?embed=true" width="100%" height="800px"></iframe>
                 </div>
             </div>
         </Layout>
