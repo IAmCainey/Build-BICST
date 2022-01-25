@@ -2,7 +2,7 @@
 import style from '../styles/pageHero.module.scss'
 
 
-const pageHero = (props) => {
+const pageHero = () => {
 
     return (
         <section className={style.hero}>
