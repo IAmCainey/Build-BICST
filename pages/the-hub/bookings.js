@@ -21,6 +21,7 @@ export default function Bookings() {
                 <div>
                     <h2>Hub Booking Form</h2>
                     <p>please use the form only for booking the hub</p>
+                    <p>test</p>
                 </div>
 
                 <div>
