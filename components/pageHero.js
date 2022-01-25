@@ -1,7 +1,6 @@
 // Styling
 import style from '../styles/pageHero.module.scss'
 
-
 const pageHero = () => {
 
     return (
