@@ -74,3 +74,13 @@ label {
     text-transform: uppercase;
     letter-spacing: 5px;
 }
+
+// Lists
+ul {
+    li {
+        font-size: 1.6rem;
+        text-transform: capitalize;
+        color: $dark-blue;
+        letter-spacing: 8px;
+    }
+}
