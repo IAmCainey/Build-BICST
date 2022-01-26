@@ -26,6 +26,33 @@ $dark-blue: #4A5568;
     }
 }
 
+.btn-reverse{
+    border-radius: 8px;
+    border: solid 1px $dark;
+    padding: 14px 18px;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: $yellow;
+    color: $dark;
+    box-shadow: 0 0 10px $yellow;
+    transition: all ease-in-out .3s;
+
+    
+    &:hover {
+        cursor: pointer;
+        background-color: $dark-blue;
+        color: $light;
+        transition: all ease-in-out .3s;
+        box-shadow: 0 0 10px $dark-blue;
+    }
+}
+
+// Text & fonts
+.light-text {
+    color: $light;
+}
+
 .content {
     margin: 100px 0;
 }
