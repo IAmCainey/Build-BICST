@@ -69,9 +69,10 @@
             padding: 0;
             display: block;
             padding: 20px 30px;
+            transition: all ease-in-out 0.3s;
 
             &:hover {
-                background-color: $dark;
+                background-color: $dark-blue;
                 color: $yellow;
                 transition: all ease-in-out 0.3s;
             }
@@ -86,7 +87,6 @@
             display: block;
             position: absolute;
             margin-top: 36px;
-            transition: all ease-in-out 0.3s;
             left: 0;
     }
 }
