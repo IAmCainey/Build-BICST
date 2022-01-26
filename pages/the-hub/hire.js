@@ -5,7 +5,7 @@ import Link from 'next/link'
 // Styling
 import Layout from '../../layouts/main'
 
-const bookings = () => {
+const bookings = (props) => {
     return (
         <Layout>
             <Head>
@@ -14,7 +14,6 @@ const bookings = () => {
             <div className='flex'>
                 <div>
                     <h1>hub hire</h1>
-
                     <section>
 
                         <section className='tm-lg'>
