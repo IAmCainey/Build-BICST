@@ -11,10 +11,14 @@
     margin: auto;
     align-content: center;
     align-items: center;
+
+    @include tablet {
+        display: none;
+    }
+    
     
     .img {
-        height: auto;
-        max-width: 150px;
+        width: 150px;
         -webkit-filter: grayscale(100%);
         filter: grayscale(100%);
 

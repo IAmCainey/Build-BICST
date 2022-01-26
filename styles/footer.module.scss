@@ -23,12 +23,22 @@
     color: $light;
     gap: 100px;
     padding: 50px 0 100px 0;
+
+    @include tablet {
+        flex-direction: column;
+    }
 }
 
 .item {
     flex: 1 1 33.33%;
     align-items: flex-start;
     text-align: center;
+
+    @include tablet {
+        margin: 0;
+        padding: 0;
+        flex: 1;
+    }
 }
 
 .link {

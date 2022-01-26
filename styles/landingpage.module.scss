@@ -17,33 +17,41 @@
     gap: 50px;
 
     .item {
-        flex: 1 1 0;
+        flex: 1 33.33%;
         text-align: center;
+    }
+
+    @include tablet {
+
+        display: block;
+        margin: 100px 0;
+        width: 100%;
+        text-align: center;
+        padding: 400px 0;
     }
 }
 
 .container {
     display: flex;
-    height: 100%;
+    height: auto;
     align-items: center;
     width: 80%;
     margin: auto;
     gap: 50px;
-
-    .item {
-        flex: 1 1 0;
-        text-align: center;
-    }
 }
 .container_2 {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100%;
-    width: 80%;
+    width: 50%;
     margin: auto;
     flex-direction: column;
     text-align: center;
+
+    @include tablet {
+        width: 100%;
+    }
 }
 
 .title {
@@ -100,12 +108,14 @@
 }
 
 .mission {
-    height: 100vh;
+    min-height: 100vh;
+    height: 100%;
+    padding: 50px 0;
     background-color: $dark-blue;
     color: $light;
 }
 
 .theTeam {
-    height: 100vh;
+    height:100%;
 }
 
