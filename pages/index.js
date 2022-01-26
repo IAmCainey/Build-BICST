@@ -2,6 +2,7 @@
 import Layout from '../layouts/landingpage'
 import style from '../styles/landingpage.module.scss'
 import cardStyle from '../styles/cards.module.scss'
+import sponsorsStyle from '../styles/sponsors.module.scss'
 
 // Components
 
@@ -10,6 +11,13 @@ import cardStyle from '../styles/cards.module.scss'
 import profileRob from '../public/images/profiles/rob.webp'
 import profileJimmy from '../public/images/profiles/jimmy.webp'
 import profileLaura from '../public/images/profiles/laura.webp'
+
+// Sponsors
+import sponsorsCoop from '../public/images/sponsors/coop.jpg'
+import sponsorsJohnfisher from '../public/images/sponsors/johnfisher.jpg'
+import sponsorsLocaltrust from '../public/images/sponsors/localtrust.jpg'
+import sponsorsLotto from '../public/images/sponsors/lotto.png'
+import sponsorsWren from '../public/images/sponsors/wren.png'
 
 
 // Next Imports
@@ -125,6 +133,54 @@ const LandingPage = () => {
             </div>
 
           </div>
+        </div>
+      </section>
+
+      <section className={sponsorsStyle.sponsors}>
+        <div className={sponsorsStyle.img}>
+          <Image
+            src={sponsorsCoop}
+            alt="The COOP Barrow Island"
+            className={sponsorsStyle.img}
+            placeholder="blur"
+            title='The COOP Barrow Island'
+          />
+        </div>
+        <div className={sponsorsStyle.img}>
+          <Image
+            src={sponsorsJohnfisher}
+            alt="John Fisher Foundation"
+            className={sponsorsStyle.img}
+            placeholder="blur"
+            title='John Fisher Foundation'
+          />
+        </div>
+        <div className={sponsorsStyle.img}>
+          <Image
+            src={sponsorsLocaltrust}
+            alt="Local Trush | Big Local"
+            className={sponsorsStyle.img}
+            placeholder="blur"
+            title='Local Trush | Big Local'
+          />
+        </div>
+        <div className={sponsorsStyle.img}>
+          <Image
+            src={sponsorsLotto}
+            alt="Big Lottery Fund"
+            className={sponsorsStyle.img}
+            placeholder="blur"
+            title='Big Lottery Fund'
+          />
+        </div>
+        <div className={sponsorsStyle.img}>
+          <Image
+            src={sponsorsWren}
+            alt="Wren, Resoucing YourProjects"
+            className={sponsorsStyle.img}
+            placeholder="blur"
+            title='Wren, Resoucing YourProjects'
+          />
         </div>
       </section>
     </Layout>
