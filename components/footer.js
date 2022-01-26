@@ -1,5 +1,8 @@
 // Components
 import Link from 'next/link'
+import Image from 'next/image'
+
+import sponsorLotto from '../public/images/sponsors/lotto.png'
 
 // Styling
 import style from '../styles/footer.module.scss'
@@ -47,6 +50,13 @@ const Footer = () => {
                             Contact Number : <span className={style.span}>01229 820470</span> <br />
                             <a className={style.link_2} href="mailto:bicstrust@gmail.com">bicstrust@gmail.com</a>
                         </p>
+                        <Image
+                            className={style.lotto}
+                            src={sponsorLotto}
+                            alt="the big lottery found"
+                            placeholder="blur"
+                        />
+
                     </div>
                 </div>
                 <div className={style.footer_note}>

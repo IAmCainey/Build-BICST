@@ -6,6 +6,12 @@ import cardStyle from '../styles/cards.module.scss'
 // Components
 
 
+// Profile Images
+import profileRob from '../public/images/profiles/rob.webp'
+import profileJimmy from '../public/images/profiles/jimmy.webp'
+import profileLaura from '../public/images/profiles/laura.webp'
+
+
 // Next Imports
 import Head from 'next/head'
 import Link from 'next/link'
@@ -86,10 +92,9 @@ const LandingPage = () => {
             <div className={cardStyle.card}>
               <Image
                 className={cardStyle.img}
-                src="https://res.cloudinary.com/dw76zgmsl/image/upload/c_thumb,w_200,g_face/v1598037564/BICST/Site/People/rob-mcaloone_glxwaw.jpg"
-                width="200"
-                height="200"
+                src={profileRob}
                 alt="rob mcaloone"
+                placeholder="blur"
               />
               <h4>rob mcaloone</h4>
               <span>Director</span>
@@ -98,10 +103,11 @@ const LandingPage = () => {
             <div className={cardStyle.card}>
               <Image
                 className={cardStyle.img}
-                src="https://res.cloudinary.com/dw76zgmsl/image/upload/ar_1:1,b_rgb:262c35,bo_0px_solid_rgb:ffffff,c_fill,g_auto,r_max,w_1000/v1598037564/BICST/Site/People/IMG_0841-768x576_uspkgk.jpg"
+                src={profileJimmy}
                 width="200"
                 height="200"
                 alt="Jimmy Tongue"
+                placeholder="blur"
               />
               <h4>Jimmy Tongue</h4>
               <span>Director & Chairman</span>
@@ -110,10 +116,9 @@ const LandingPage = () => {
             <div className={cardStyle.card}>
               <Image
                 className={cardStyle.img}
-                src="https://res.cloudinary.com/dw76zgmsl/image/upload/c_thumb,w_200,g_face/v1598037564/BICST/Site/People/laura_t16pdv.jpg"
-                width="200"
-                height="200"
+                src={profileLaura}
                 alt="rLaura Brookshaw"
+                placeholder="blur"
               />
               <h4>Laura Brookshaw</h4>
               <span>Director Of Finance</span>

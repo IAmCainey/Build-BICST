@@ -16,7 +16,7 @@ const topNav = () => {
                         </a>
                     </Link>
                 </div>
-                <div>
+                <div className={style.linkBlock}>
                     <Link href="/">
                         <a className={style.link}>
                             home
