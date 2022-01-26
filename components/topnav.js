@@ -63,7 +63,7 @@ const topNav = () => {
                         </a>
                     </Link>
                     <Link href="/the-hub/hire">
-                        <a className='btn-reverse'>Hall Hire</a>
+                        <a className='btn-reverse lm-md'>Hall Hire</a>
                     </Link>
                 </div>
             </div>
