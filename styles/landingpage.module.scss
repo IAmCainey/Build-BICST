@@ -41,9 +41,7 @@
 }
 .container_2 {
     display: flex;
-    align-items: center;
     justify-content: center;
-    height: 100%;
     width: 50%;
     margin: auto;
     flex-direction: column;
@@ -108,9 +106,7 @@
 }
 
 .mission {
-    min-height: 100vh;
-    height: 100%;
-    padding: 50px 0;
+    padding: 100px 10px;
     background-color: $dark-blue;
     color: $light;
 }
