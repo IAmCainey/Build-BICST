@@ -33,11 +33,11 @@
 
 .container {
     display: flex;
-    height: auto;
+    height: 100%;
     align-items: center;
-    width: 80%;
+    width: 70%;
     margin: auto;
-    gap: 50px;
+    align-content: center;
 }
 .container_2 {
     display: flex;
