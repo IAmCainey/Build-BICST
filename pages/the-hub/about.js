@@ -23,7 +23,7 @@ const aboutTheHub = () => {
                     Established in 2015 this Sports Trust was founded by Rob McAloone to ensure future generations on <b>Barrow Island</b> have a venue in which they are able to participate in a variety of sports as well as the use of a safe, warm Community Centre which may provide new skills as well as a venue for activities.
                 </p>
 
-                <div className="flex">
+                <div className="flex tm-lg">
                     <div>
                         <h2>meetings</h2>
                         <p>
