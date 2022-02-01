@@ -15,8 +15,8 @@ function urlFor(source) {
 
 const Post = ({ post }) => {
     const {
-        title,
-        name,
+        title = 'Missing title',
+        name = 'Missing name',
         categories,
         authorImage,
         body = []
