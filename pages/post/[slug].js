@@ -2,7 +2,7 @@
 import groq from 'groq'
 import imageUrlBuilder from '@sanity/image-url'
 import BlockContent from '@sanity/block-content-to-react'
-import Image from 'next/image'
+// import Image from 'next/image'
 
 import client from '../../client'
 
@@ -33,7 +33,7 @@ const Post = ({ post }) => {
                         {categories.map(category => <li key={category}>{category}</li>)}
                     </ul>
                 )}
-                {authorImage && (
+                {/* {authorImage && (
                     <div>
                         <Image
                             src={urlFor(authorImage)
@@ -44,7 +44,7 @@ const Post = ({ post }) => {
                             height={150}
                         />
                     </div>
-                )}
+                )} */}
                 <BlockContent
                     blocks={body}
                     imageOptions={{ w: 320, h: 240, fit: 'max' }}
