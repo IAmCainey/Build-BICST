@@ -1,6 +1,7 @@
 import groq from 'groq'
 import imageUrlBuilder from '@sanity/image-url'
 import BlockContent from '@sanity/block-content-to-react'
+import Image from 'next/image'
 import client from '../../client'
 
 function urlFor(source) {
@@ -27,10 +28,13 @@ const Post = ({ post }) => {
             )}
             {authorImage && (
                 <div>
-                    <img
+                    <Image
                         src={urlFor(authorImage)
                             .width(50)
                             .url()}
+                        width={200}
+                        height={200}
+                        alt='this is an image'
                     />
                 </div>
             )}
