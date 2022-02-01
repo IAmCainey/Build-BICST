@@ -1,7 +1,13 @@
+// Components
 import groq from 'groq'
 import imageUrlBuilder from '@sanity/image-url'
 import BlockContent from '@sanity/block-content-to-react'
+import Image from 'next/image'
+
 import client from '../../client'
+
+// Styling
+import Layout from '../../layouts/main'
 
 function urlFor(source) {
     return imageUrlBuilder(client).image(source)
@@ -16,32 +22,38 @@ const Post = ({ post }) => {
         body = []
     } = post
     return (
-        <article>
-            <h1>{title}</h1>
-            <span>By {name}</span>
-            {categories && (
-                <ul>
-                    Posted in
-                    {categories.map(category => <li key={category}>{category}</li>)}
-                </ul>
-            )}
-            {authorImage && (
-                <div>
-                    <img
-                        src={urlFor(authorImage)
-                            .width(50)
-                            .url()}
-                    />
-                </div>
-            )}
-            <BlockContent
-                blocks={body}
-                imageOptions={{ w: 320, h: 240, fit: 'max' }}
-                {...client.config()}
-            />
+        <Layout>
+
+            <article>
+                <h1>{title}</h1>
+                <span>By {name}</span>
+                {categories && (
+                    <ul>
+                        Posted in
+                        {categories.map(category => <li key={category}>{category}</li>)}
+                    </ul>
+                )}
+                {authorImage && (
+                    <div>
+                        <Image
+                            src={urlFor(authorImage)
+                                .width(200)
+                                .url()}
+                            alt="{name}"
+                            width={200}
+                            height={150}
+                        />
+                    </div>
+                )}
+                <BlockContent
+                    blocks={body}
+                    imageOptions={{ w: 320, h: 240, fit: 'max' }}
+                    {...client.config()}
+                />
 
 
-        </article>
+            </article>
+        </Layout>
     )
 }
 

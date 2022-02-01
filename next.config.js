@@ -2,6 +2,7 @@ module.exports = {
   images: {
     domains: ['res.cloudinary.com',
       'images.unsplash.com',
+      'cdn.sanity.io',
     ],
   },
   rewrites: () => [STUDIO_REWRITE],

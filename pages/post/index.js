@@ -1,11 +1,15 @@
+// Components
 import Link from 'next/link'
 import groq from 'groq'
+
 import client from '../../client'
+
+// Styling
+import Layout from '../../layouts/main'
 
 const Index = ({ posts }) => {
     return (
-        <div>
-            <h1>Welcome to a blog!</h1>
+        <Layout>
             {posts.length > 0 && posts.map(
                 ({ _id, title = '', slug = '', publishedAt = '' }) =>
                     slug && (
@@ -13,11 +17,13 @@ const Index = ({ posts }) => {
                             <Link href="/post/[slug]" as={`/post/${slug.current}`}>
                                 <a>{title}</a>
                             </Link>{' '}
-                            ({new Date(publishedAt).toDateString()})
+                            <p>
+                                Posted : ({new Date(publishedAt).toDateString()})
+                            </p>
                         </li>
                     )
             )}
-        </div>
+        </Layout>
     )
 }
 
