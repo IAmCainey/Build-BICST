@@ -125,7 +125,7 @@ const LandingPage = () => {
               <Image
                 className={cardStyle.img}
                 src={profileLaura}
-                alt="rLaura Brookshaw"
+                alt="Laura Brookshaw"
                 placeholder="blur"
               />
               <h4>Laura Brookshaw</h4>
