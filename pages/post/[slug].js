@@ -39,6 +39,8 @@ const Post = ({ post }) => {
                 imageOptions={{ w: 320, h: 240, fit: 'max' }}
                 {...client.config()}
             />
+
+
         </article>
     )
 }
