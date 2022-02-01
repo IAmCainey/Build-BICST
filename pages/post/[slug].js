@@ -2,7 +2,11 @@ import groq from 'groq'
 import imageUrlBuilder from '@sanity/image-url'
 import BlockContent from '@sanity/block-content-to-react'
 import Image from 'next/image'
+import Router from 'next/router'
 import client from '../../client'
+
+// Styling
+import Layout from '../../layouts/main'
 
 function urlFor(source) {
     return imageUrlBuilder(client).image(source)
@@ -17,33 +21,39 @@ const Post = ({ post }) => {
         body = []
     } = post
     return (
-        <article>
-            <h1>{title}</h1>
-            <span>By {name}</span>
-            {categories && (
-                <ul>
-                    Posted in
-                    {categories.map(category => <li key={category}>{category}</li>)}
-                </ul>
-            )}
-            {authorImage && (
-                <div>
-                    <Image
-                        src={urlFor(authorImage)
-                            .width(50)
-                            .url()}
-                        width={200}
-                        height={200}
-                        alt='this is an image'
-                    />
-                </div>
-            )}
-            <BlockContent
-                blocks={body}
-                imageOptions={{ w: 320, h: 240, fit: 'max' }}
-                {...client.config()}
-            />
-        </article>
+        <Layout>
+            <article>
+                <h1>{title}</h1>
+                <span>By {name}</span>
+                {categories && (
+                    <ul>
+                        Posted in
+                        {categories.map(category => <li key={category}>{category}</li>)}
+                    </ul>
+                )}
+                {authorImage && (
+                    <div>
+                        <Image
+                            src={urlFor(authorImage)
+                                .width(50)
+                                .url()}
+                            width={200}
+                            height={200}
+                            alt={name}
+                        />
+                    </div>
+                )}
+                <BlockContent
+                    blocks={body}
+                    imageOptions={{ w: 320, h: 240, fit: 'max' }}
+                    {...client.config()}
+                />
+            </article>
+
+            <div className='my-md'>
+                <button className="btn" onClick={() => Router.back()}>Back to articles</button>
+            </div>
+        </Layout>
     )
 }
 
