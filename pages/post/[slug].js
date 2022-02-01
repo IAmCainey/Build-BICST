@@ -25,7 +25,7 @@ const Post = ({ post }) => {
         <Layout>
 
             <article>
-                <h1>{title}</h1>
+                <h1></h1>
                 <span>By {name}</span>
                 {categories && (
                     <ul>
