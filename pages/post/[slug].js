@@ -1,5 +1,6 @@
 // Components
 import groq from 'groq'
+import imageUrlBuilder from '@sanity/image-url'
 import BlockContent from '@sanity/block-content-to-react'
 import Image from 'next/image'
 
@@ -8,12 +9,14 @@ import client from '../../client'
 // Styling
 import Layout from '../../layouts/main'
 
-
+function urlFor(source) {
+    return imageUrlBuilder(client).image(source)
+}
 
 const Post = ({ post }) => {
     const {
-        title = 'Missing title',
-        name = 'Missing name',
+        title,
+        name,
         categories,
         authorImage,
         body = []
@@ -30,7 +33,18 @@ const Post = ({ post }) => {
                         {categories.map(category => <li key={category}>{category}</li>)}
                     </ul>
                 )}
-
+                {authorImage && (
+                    <div>
+                        <Image
+                            src={urlFor(authorImage)
+                                .width(200)
+                                .url()}
+                            alt="{name}"
+                            width={200}
+                            height={150}
+                        />
+                    </div>
+                )}
                 <BlockContent
                     blocks={body}
                     imageOptions={{ w: 320, h: 240, fit: 'max' }}
@@ -47,6 +61,7 @@ const query = groq`*[_type == "post" && slug.current == $slug][0]{
   title,
   "name": author->name,
   "categories": categories[]->title,
+  "authorImage": author->image,
   body
 }`
 export async function getStaticPaths() {
