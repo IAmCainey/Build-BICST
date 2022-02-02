@@ -27,12 +27,6 @@ const topNav = () => {
                             the hub
                             <div className={style.dropdown}>
                                 <div className={style.dropdown_content}>
-
-                                    <Link href="/the-hub/about">
-                                        <a className={style.link}>
-                                            About us
-                                        </a>
-                                    </Link>
                                     <Link href="/galleries">
                                         <a className={style.link}>
                                             Gallories
