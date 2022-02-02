@@ -49,14 +49,6 @@ const LandingPage = () => {
           <div>
           </div>
         </div>
-
-
-
-        <Link href="#sports">
-          <a>
-            <div className={style.scroll} />
-          </a>
-        </Link>
       </section>
 
       <section id="sports" className={style.sports}>

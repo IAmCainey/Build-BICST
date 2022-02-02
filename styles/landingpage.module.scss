@@ -64,41 +64,6 @@
     letter-spacing: 5px;
 }
 
-.scroll {
-    position: absolute;
-    bottom: 50px;
-    left: 45%;
-    text-align: center;
-    border-radius: 100px;
-    background-color: $light;
-    color: $dark;
-    height: 100px;
-    width: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.486);
-    transition: all .3s ease-in-out;
-    text-transform: uppercase;
-
-        &:before {
-            content: 'scroll';
-        }
-
-        &:hover {
-            transition: all .3s ease-in-out;
-            cursor: pointer;
-            background-color: rgba(255, 255, 255, 0.486);
-
-                &:after {
-                    content: 'down';
-                }
-                &:before {
-                    content: '';
-                }
-        }
-}
-
 .sports {
     height: 100vh;
     display: flex;
