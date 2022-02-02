@@ -8,8 +8,8 @@ import sponsorsStyle from '../styles/sponsors.module.scss'
 
 
 // Profile Images
-import profileRob from '../public/images/profiles/rob.webp'
-import profileJimmy from '../public/images/profiles/jimmy.webp'
+import profileRob from '../public/images/profiles/rob.jpg'
+import profileDebbie from '../public/images/profiles/debbie.jpg'
 import profileLaura from '../public/images/profiles/laura.webp'
 
 // Sponsors
@@ -101,22 +101,24 @@ const LandingPage = () => {
                 className={cardStyle.img}
                 src={profileRob}
                 alt="rob mcaloone"
+                width="250"
+                height="250"
                 placeholder="blur"
               />
-              <h4>rob mcaloone</h4>
+              <h4 className='my-md'>rob mcaloone</h4>
               <span>Director</span>
             </div>
 
             <div className={cardStyle.card}>
               <Image
                 className={cardStyle.img}
-                src={profileJimmy}
-                width="200"
-                height="200"
-                alt="Jimmy Tongue"
+                src={profileDebbie}
+                width="250"
+                height="250"
+                alt="Debbie Morgan"
                 placeholder="blur"
               />
-              <h4>Jimmy Tongue</h4>
+              <h4 className='my-md'>Debbie morgan</h4>
               <span>Director & Chairman</span>
             </div>
 
@@ -124,10 +126,12 @@ const LandingPage = () => {
               <Image
                 className={cardStyle.img}
                 src={profileLaura}
-                alt="Laura Brookshaw"
+                alt="Laura Morgan"
+                width="250"
+                height="250"
                 placeholder="blur"
               />
-              <h4>Laura Brookshaw</h4>
+              <h4 className='my-md'>Laura morgan</h4>
               <span>Director Of Finance</span>
             </div>
 
