@@ -5,21 +5,21 @@ import Link from 'next/link'
 
 
 // Styling
-import Layout from '../../layouts/main'
-import style from '../../styles/facilities.module.scss'
+import Layout from '../layouts/main'
+import style from '../styles/facilities.module.scss'
 
 // Images
-import One from '../../public/images/facilities/IMG_0830.JPG'
-import Two from '../../public/images/facilities/IMG_0835.JPG'
-import Three from '../../public/images/facilities/IMG_0839.JPG'
-import Four from '../../public/images/facilities/IMG_0844.JPG'
-import Five from '../../public/images/facilities/IMG_0847.JPG'
-import Six from '../../public/images/facilities/IMG_0850.JPG'
-import Seven from '../../public/images/facilities/IMG_0856.JPG'
+import One from '../public/images/facilities/IMG_0830.JPG'
+import Two from '../public/images/facilities/IMG_0835.JPG'
+import Three from '../public/images/facilities/IMG_0839.JPG'
+import Four from '../public/images/facilities/IMG_0844.JPG'
+import Five from '../public/images/facilities/IMG_0847.JPG'
+import Six from '../public/images/facilities/IMG_0850.JPG'
+import Seven from '../public/images/facilities/IMG_0856.JPG'
 
 const pageTitle = `The Hubs Facilities`
 
-const aboutTheHub = () => {
+const Galleries = () => {
     return (
         <Layout>
             <Head>
@@ -89,4 +89,4 @@ const aboutTheHub = () => {
     )
 }
 
-export default aboutTheHub
+export default Galleries
