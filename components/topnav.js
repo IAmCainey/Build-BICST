@@ -33,9 +33,9 @@ const topNav = () => {
                                             About us
                                         </a>
                                     </Link>
-                                    <Link href="/the-hub/facilities">
+                                    <Link href="/galleries">
                                         <a className={style.link}>
-                                            facilities
+                                            Gallories
                                         </a>
                                     </Link>
                                     <Link href="/the-hub/hire">
@@ -47,30 +47,9 @@ const topNav = () => {
                             </div>
                         </a>
                     </Link>
-                    <Link href="/sports">
-                        <a className={`${style.link} ${style.drop}`}>
-                            Sports
-                        </a>
-                    </Link>
-                    <Link href="#">
-                        <a className={`${style.link} ${style.drop}`}>
-                            Groups
-                            <div className={style.dropdown}>
-                                <div className={style.dropdown_content}>
-
-                                    <Link href="/groups/cast-drama">
-                                        <a className={style.link}>
-                                            cast theatre Company
-                                        </a>
-                                    </Link>
-
-                                </div>
-                            </div>
-                        </a>
-                    </Link>
-                    <Link href="/events">
+                    <Link href="/post">
                         <a className={style.link}>
-                            events
+                            Articles
                         </a>
                     </Link>
                     <Link href="/the-hub/hire">
