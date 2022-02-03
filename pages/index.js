@@ -51,9 +51,7 @@ const LandingPage = () => {
         </div>
       </section>
 
-      <section className='container'>
-        <h2>About barrow island community sports trust</h2>
-
+      <section className='container flex'>
         <p>
           All about <b>Barrow Island Community Sports Trust,</b> from Community to a sporting centre, we cover it all..
         </p>

@@ -42,6 +42,10 @@ span {
         flex: 1 50%;
         height: auto;
     }
+
+    @include tablet {
+        flex-direction: column;
+    }
 }
 
 
