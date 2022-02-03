@@ -14,6 +14,7 @@ function urlFor(source) {
 
 const Post = ({ post }) => {
     const {
+        title = 'Missing title',
         name = 'Missing name',
         categories,
         authorImage,
@@ -22,7 +23,7 @@ const Post = ({ post }) => {
     return (
         <Layout>
             <article>
-                <h1>{title}</h1>
+                <h1></h1>
                 <span>By {name}</span>
                 {categories && (
                     <ul>
