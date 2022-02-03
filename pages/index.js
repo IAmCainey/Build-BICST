@@ -36,8 +36,6 @@ const LandingPage = () => {
         <title>Barrow Community Sports Trust</title>
       </Head>
 
-      {/* <Nav /> */}
-
       <section className={style.hero}>
         <div className={style.container}>
           <div>
@@ -51,7 +49,7 @@ const LandingPage = () => {
         </div>
       </section>
 
-      <section className='container flex'>
+      <section className='container'>
         <p>
           All about <b>Barrow Island Community Sports Trust,</b> from Community to a sporting centre, we cover it all..
         </p>

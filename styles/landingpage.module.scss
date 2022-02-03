@@ -9,28 +9,6 @@
 
 }
 
-.sports_container {
-    display: flex;
-    align-items: flex-start;
-    width: 80%;
-    margin: auto;
-    gap: 50px;
-
-    .item {
-        flex: 1 33.33%;
-        text-align: center;
-    }
-
-    @include tablet {
-
-        display: block;
-        margin: 100px 0;
-        width: 100%;
-        text-align: center;
-        padding: 400px 0;
-    }
-}
-
 .container {
     display: flex;
     height: 100%;
@@ -64,12 +42,6 @@
     letter-spacing: 5px;
 }
 
-.sports {
-    height: 100vh;
-    display: flex;
-    align-items: center;
-}
-
 .mission {
     padding: 100px 10px;
     background-color: $dark-blue;
@@ -77,7 +49,7 @@
 }
 
 .theTeam {
-    height:100%;
+    max-height:100%;
     padding: 100px 10px;
 }
 
