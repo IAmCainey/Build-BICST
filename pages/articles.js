@@ -2,10 +2,10 @@
 import Link from 'next/link'
 import groq from 'groq'
 
-import client from '../../client'
+import client from '../client'
 
 // Styling
-import Layout from '../../layouts/main'
+import Layout from '../layouts/main'
 
 const Index = ({ posts }) => {
     return (
