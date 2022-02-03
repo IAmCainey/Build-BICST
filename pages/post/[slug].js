@@ -23,7 +23,7 @@ const Post = ({ post }) => {
     return (
         <Layout>
             <article>
-                <h1></h1>
+                <h1>{title}</h1>
                 <span>By {name}</span>
                 {categories && (
                     <ul>
@@ -31,18 +31,7 @@ const Post = ({ post }) => {
                         {categories.map(category => <li key={category}>{category}</li>)}
                     </ul>
                 )}
-                {authorImage && (
-                    <div>
-                        <Image
-                            src={urlFor(authorImage)
-                                .width(50)
-                                .url()}
-                            width={200}
-                            height={200}
-                            alt={name}
-                        />
-                    </div>
-                )}
+
                 <BlockContent
                     blocks={body}
                     imageOptions={{ w: 320, h: 240, fit: 'max' }}
