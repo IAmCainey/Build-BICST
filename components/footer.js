@@ -17,17 +17,8 @@ const Footer = () => {
                         <Link href="/">
                             <a className={style.link}>home</a>
                         </Link>
-                        <Link href="/blog">
+                        <Link href="/post">
                             <a className={style.link}>articles</a>
-                        </Link>
-                        <Link href="/events">
-                            <a className={style.link}>events</a>
-                        </Link>
-                        <Link href="/the-hub/about">
-                            <a className={style.link}>The Hub</a>
-                        </Link>
-                        <Link href="/contact">
-                            <a className={style.link}>contact us</a>
                         </Link>
                         <Link href="/the-hub/hire">
                             <a className={style.link}>hub hire</a>
