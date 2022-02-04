@@ -6,7 +6,16 @@
     background-color: $dark;
     height: 100vh;
     color: $light;
+    background-image: url('../public/images/facilities/IMG_0830.JPG');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
 
+    .overlay {
+        background-color: rgba(0, 0, 0, 0.842);
+        height: 100%;
+
+    }
 }
 
 .container {

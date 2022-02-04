@@ -37,14 +37,16 @@ const LandingPage = () => {
       </Head>
 
       <section className={style.hero}>
-        <div className={style.container}>
-          <div>
-            <h1 className={style.title}>Barrow Island <br /><span className={style.span}>Community Sports Trust</span></h1>
-            <p>
-              A great community, supporting and helping kids to build relationships and enjoy sports.
-            </p>
-          </div>
-          <div>
+        <div className={style.overlay}>
+          <div className={style.container}>
+            <div>
+              <h1 className={style.title}>Barrow Island <br /><span className={style.span}>Community Sports Trust</span></h1>
+              <p>
+                A great community, supporting and helping kids to build relationships and enjoy sports.
+              </p>
+            </div>
+            <div>
+            </div>
           </div>
         </div>
       </section>
