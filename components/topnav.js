@@ -41,7 +41,7 @@ const topNav = () => {
                             </div>
                         </a>
                     </Link>
-                    <Link href="/post">
+                    <Link href="/articles">
                         <a className={style.link}>
                             Articles
                         </a>
