@@ -4,8 +4,6 @@ import client from '../../client'
 // Styling
 
 
-import client from '../../client'
-
 const Post = (props) => {
     const { title = 'Missing title', name = 'Missing name' } = props.post
     return (
