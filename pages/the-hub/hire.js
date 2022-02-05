@@ -52,7 +52,10 @@ const bookings = (props) => {
                 </div>
                 <div className='align-right'>
                     <Link href="/the-hub/bookings">
-                        <a className='btn'>Booking Form</a>
+                        <a className='btn'>Hall Hire</a>
+                    </Link>
+                    <Link href="/the-hub/bookings">
+                        <a className='btn lm-md'>Pitch Hire</a>
                     </Link>
                 </div>
             </div>
