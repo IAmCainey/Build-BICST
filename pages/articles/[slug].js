@@ -1,12 +1,8 @@
-import groq from 'groq'
-import imageUrlBuilder from '@sanity/image-url'
-import BlockContent from '@sanity/block-content-to-react'
-import Image from 'next/image'
-import Router from 'next/router'
+
 import client from '../../client'
 
 // Styling
-import Layout from '../../layouts/main'
+
 
 import client from '../../client'
 
