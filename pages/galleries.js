@@ -26,7 +26,7 @@ const Galleries = () => {
                 <title>The Facilities @ The Community Hub</title>
             </Head>
             <section id="about">
-                <h1>fasilities</h1>
+                <h1>The Hub</h1>
             </section>
 
             <section className={style.gallery}>
@@ -82,7 +82,7 @@ const Galleries = () => {
             </section>
 
             <section className='my-md'>
-                <h1>welcome</h1>
+                <h1>the pitches</h1>
 
             </section>
         </Layout>
