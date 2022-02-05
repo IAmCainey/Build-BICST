@@ -17,7 +17,7 @@ const Footer = () => {
                         <Link href="/">
                             <a className={style.link}>home</a>
                         </Link>
-                        <Link href="/post">
+                        <Link href="/articles">
                             <a className={style.link}>articles</a>
                         </Link>
                         <Link href="/the-hub/hire">
