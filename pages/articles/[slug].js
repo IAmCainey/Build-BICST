@@ -8,51 +8,21 @@ import client from '../../client'
 // Styling
 import Layout from '../../layouts/main'
 
-function urlFor(source) {
-    return imageUrlBuilder(client).image(source)
-}
+import client from '../../client'
 
-const Post = ({ post }) => {
-    const {
-        categories,
-        body = []
-    } = post
+const Post = (props) => {
+    const { title = 'Missing title', name = 'Missing name' } = props.post
     return (
-        <Layout>
-            <article>
-                <h1></h1>
-                <span>By</span>
-                {categories && (
-                    <ul>
-                        Posted in
-                        {categories.map(category => <li key={category}>{category}</li>)}
-                    </ul>
-                )}
-
-                <BlockContent
-                    blocks={body}
-                    imageOptions={{ w: 320, h: 240, fit: 'max' }}
-                    {...client.config()}
-                />
-            </article>
-
-            <div className='my-md'>
-                <button className="btn" onClick={() => Router.back()}>Back to articles</button>
-            </div>
-        </Layout>
+        <article>
+            <h1>{title}</h1>
+            <span>By {name}</span>
+        </article>
     )
 }
 
-const query = groq`*[_type == "post" && slug.current == $slug][0]{
-  title,
-  "name": author->name,
-  "categories": categories[]->title,
-  "authorImage": author->image,
-  body
-}`
 export async function getStaticPaths() {
     const paths = await client.fetch(
-        groq`*[_type == "post" && defined(slug.current)][].slug.current`
+        `*[_type == "post" && defined(slug.current)][].slug.current`
     )
 
     return {
@@ -64,11 +34,14 @@ export async function getStaticPaths() {
 export async function getStaticProps(context) {
     // It's important to default the slug so that it doesn't return "undefined"
     const { slug = "" } = context.params
-    const post = await client.fetch(query, { slug })
+    const post = await client.fetch(`
+    *[_type == "post" && slug.current == $slug][0]{title, "name": author->name}
+  `, { slug })
     return {
         props: {
             post
         }
     }
 }
+
 export default Post
