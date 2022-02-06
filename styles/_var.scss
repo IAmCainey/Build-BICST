@@ -1,7 +1,15 @@
+// colours
 $yellow:    #F6E05E;
 $light:     #E2E8F0;
 $dark:      #1A202C;
 $dark-blue: #4A5568;
+
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Cairo&family=Indie+Flower&display=swap');
+
+$heading: 'Anton', sans-serif;
+$text: 'Cairo', sans-serif;
+$fancy: 'Indie Flower', cursive;
 
 
 .btn {

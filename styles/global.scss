@@ -15,11 +15,21 @@ html, body {
 p {
     letter-spacing: 3px;
     font-size: 1.8rem;
+    font-family: $text;
 }
 
 h1, h2, h3, h4, h5, h6 {
     text-transform: uppercase;
     letter-spacing: 10px;
+    font-family: $heading;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 3rem;
 }
 
 h3 {
@@ -28,8 +38,9 @@ h3 {
 }
 
 span {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     letter-spacing: 4px;
+    font-family: $fancy;
 }
 
 
