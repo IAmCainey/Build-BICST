@@ -45,6 +45,7 @@ const LandingPage = () => {
       </section>
 
       <section className='container'>
+        <h2>Who are we?</h2>
         <p>
           All about <b>Barrow Island Community Sports Trust,</b> from Community to a sporting centre, we cover it all..
         </p>
