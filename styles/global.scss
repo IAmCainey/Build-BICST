@@ -46,16 +46,17 @@ span {
 
 .flex {
     display: flex;
-    flex: 1;
+    flex-direction: row;
     gap: 100px;
 
     > * {
         flex: 1 50%;
         height: auto;
+        align-items: center;
     }
 
     @include tablet {
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
 }
 
@@ -70,6 +71,10 @@ span {
 
 .align-right {
     text-align: right;
+
+    @include tablet {
+        text-align: center;
+    }
 }
 
 // Form styling
