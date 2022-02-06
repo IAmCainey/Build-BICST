@@ -1,3 +1,6 @@
+@import './mixins';
+
+
 // colours
 $yellow:    #F6E05E;
 $light:     #E2E8F0;
@@ -87,4 +90,8 @@ $fancy: 'Indie Flower', cursive;
     width: 70%;
     padding: 100px 10px;
     margin: auto;
+
+    @include tablet {
+        width: auto;
+    }
 }
