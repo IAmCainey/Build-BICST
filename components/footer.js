@@ -53,27 +53,23 @@ const Footer = () => {
                         />
 
                         <div className='social'>
-                            <Link href="#">
+                            <Link href="https://www.facebook.com/bicstrust">
                                 <a target='blank'>
                                     <AiOutlineFacebook className='icon-social' />
                                 </a>
                             </Link>
-                            <Link href='#'>
+                            <Link href='https://twitter.com/bicstrust'>
                                 <a target='blank'>
                                     <AiOutlineTwitter className='icon-social' />
                                 </a>
                             </Link>
-                            <Link href='#'>
-                                <a target='blank'>
+                            <Link href='mailto:bicstrust@gmail.com'>
+                                <a>
                                     <AiOutlineMail className='icon-social' />
                                 </a>
                             </Link>
-                            <Link href='#'>
-                                <a target='blank'>
-                                </a>
-                            </Link>
-                            <Link href='#'>
-                                <a target='blank'>
+                            <Link href='tel:01229 820470'>
+                                <a>
                                     <AiOutlinePhone className='icon-social' />
                                 </a>
                             </Link>
