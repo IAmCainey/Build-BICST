@@ -1,8 +1,12 @@
 // Components
 import Link from 'next/link'
+import Image from 'next/image'
 
 // Styling
 import style from '../styles/topnav.module.scss'
+
+// Images
+import logo from '../public/images/logo.png'
 
 
 const topNav = () => {
@@ -12,7 +16,14 @@ const topNav = () => {
                 <div>
                     <Link href="/">
                         <a className={style.titleLink}>
-                            <h4 className={style.h4}>BICST</h4>
+                            <Image
+                                src={logo}
+                                alt="The COOP Barrow Island"
+                                className={style.logo}
+                                placeholder="blur"
+                                height={75}
+                                width={250}
+                            />
                         </a>
                     </Link>
                 </div>
