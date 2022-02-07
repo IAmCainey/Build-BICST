@@ -11,6 +11,9 @@ import Layout from '../layouts/main'
 export default function Privacy() {
     return (
         <Layout>
+            <Head>
+                <title>Privacy @ BICST</title>
+            </Head>
             <h1>Privacy Policy</h1>
 
             <p>Last updated: February 07, 2022</p>

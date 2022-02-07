@@ -11,7 +11,7 @@ export default function Custom404() {
     return (
         <div className={style.container}>
             <Head>
-                <title>BICST - Error 404, not found</title>
+                <title>404 Not Found @ BICST</title>
             </Head>
             <div>
                 <h1 className={style.title}><span className={style.span}>error</span> | 404</h1>

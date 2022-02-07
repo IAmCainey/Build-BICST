@@ -6,15 +6,12 @@ import Link from 'next/link'
 import Layout from '../../layouts/main'
 import style from '../../styles/bookings.module.scss'
 
-const title = 'BICST - Hub Hire Booking'
-const pageTitle = 'Hub Hire'
-
 
 export default function Bookings() {
     return (
         <Layout>
             <Head>
-                <title>{title}</title>
+                <title>Bookings @ BICST</title>
             </Head>
 
             <div className='flex'>

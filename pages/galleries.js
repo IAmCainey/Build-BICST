@@ -23,7 +23,7 @@ const Galleries = () => {
     return (
         <Layout>
             <Head>
-                <title>The Facilities @ The Community Hub</title>
+                <title>The Gallory @ BICST</title>
             </Head>
             <section id="about">
                 <h1>The Hub</h1>

@@ -9,7 +9,7 @@ const bookings = (props) => {
     return (
         <Layout>
             <Head>
-                <title>Hall Hire @  The Community Hub</title>
+                <title>Hall Hire @ BICST</title>
             </Head>
             <div className='flex'>
                 <div>

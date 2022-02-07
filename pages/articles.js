@@ -1,6 +1,7 @@
 // Components
 import Link from 'next/link'
 import groq from 'groq'
+import Head from 'next/head'
 
 import client from '../client'
 
@@ -10,6 +11,9 @@ import Layout from '../layouts/main'
 const Index = ({ posts }) => {
     return (
         <Layout>
+            <Head>
+                <title>Articles @ BICST</title>
+            </Head>
             {posts.length > 0 && posts.map(
                 ({ _id, title = '', slug = '', publishedAt = '' }) =>
                     slug && (
