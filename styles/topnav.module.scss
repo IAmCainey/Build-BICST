@@ -18,13 +18,12 @@
         margin: auto;
         padding: 10px;
     }
+
+    @include tablet {
+        display: none;
+    }
 }
 
-    .linkBlock {
-        @include tablet {
-            display: none;
-        }
-    }
 
 .titleLink {
     text-decoration: none;
