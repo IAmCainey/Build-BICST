@@ -2,7 +2,7 @@
 import TopNav from '../components/topnav'
 import PageHero from '../components/pageHero'
 import Footer from '../components/footer'
-
+import CookieConsent from '../components/cookies'
 // Styling
 import style from '../styles/layout.module.scss'
 
@@ -16,6 +16,7 @@ export default function MainLayOut(props) {
                 {props.children}
             </div>
             <Footer />
+            <CookieConsent />
         </>
 
     )

@@ -2,6 +2,8 @@
 import Footer from '../components/footer'
 import TopNav from '../components/topnav'
 
+import CookieConsent from '../components/cookies'
+
 // Styling'
 
 const LandingLayout = props => {
@@ -10,6 +12,7 @@ const LandingLayout = props => {
             <TopNav />
             {props.children}
             <Footer />
+            <CookieConsent />
         </div>
     )
 }
