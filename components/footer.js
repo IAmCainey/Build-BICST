@@ -7,6 +7,10 @@ import sponsorLotto from '../public/images/sponsors/lotto.png'
 // Styling
 import style from '../styles/footer.module.scss'
 
+
+// Icons
+import { AiOutlineFacebook, AiOutlineTwitter, AiOutlineMail, AiOutlinePhone } from 'react-icons/ai'
+
 const Footer = () => {
     return (
         <div>
@@ -47,6 +51,33 @@ const Footer = () => {
                             alt="the big lottery found"
                             placeholder="blur"
                         />
+
+                        <div className='social'>
+                            <Link href="#">
+                                <a target='blank'>
+                                    <AiOutlineFacebook className='icon-social' />
+                                </a>
+                            </Link>
+                            <Link href='#'>
+                                <a target='blank'>
+                                    <AiOutlineTwitter className='icon-social' />
+                                </a>
+                            </Link>
+                            <Link href='#'>
+                                <a target='blank'>
+                                    <AiOutlineMail className='icon-social' />
+                                </a>
+                            </Link>
+                            <Link href='#'>
+                                <a target='blank'>
+                                </a>
+                            </Link>
+                            <Link href='#'>
+                                <a target='blank'>
+                                    <AiOutlinePhone className='icon-social' />
+                                </a>
+                            </Link>
+                        </div>
 
                     </div>
                 </div>
