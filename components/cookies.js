@@ -1,7 +1,7 @@
 // Imports
 import CookieConsent, { Cookies } from 'react-cookie-consent'
 
-export default function NameHere() {
+export default function Cookie() {
     return (
         <CookieConsent
             location='bottom'
