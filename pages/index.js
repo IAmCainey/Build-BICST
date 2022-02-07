@@ -5,6 +5,7 @@ import cardStyle from '../styles/cards.module.scss'
 
 // Components
 import Sponsors from '../components/sponsors'
+import { GiBullseye, GiSunglasses } from 'react-icons/gi'
 
 
 // Profile Images
@@ -71,12 +72,12 @@ const LandingPage = () => {
         <div className={style.container_2}>
 
           <div>
-            <h3>Our Vision</h3>
+            <h3>Our Vision <GiSunglasses /></h3>
             <p>Our vision is to provide a home for Barrow Island Sports Teams with high standard pitches and a warm, safe and dry building that can also be used for other Community activities. </p>
           </div>
 
           <div>
-            <h3>our mission</h3>
+            <h3>our mission <GiBullseye /></h3>
             <p>The mission of BICST is to offer all residents of Barrow Island a safe, warm and dry place to congregate for Sports and Community activities at reasonable prices. The Community Centre will be run in such a safe way that it will become sustainable for the Community to cover the running costs and maintenance. The promotion of Community participation in healthy recreation for the benefit of the inhabitants of Barrow Island, by the provision of facilities for the playing of sports and other Leisure activities. </p>
           </div>
 
