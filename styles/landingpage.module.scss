@@ -13,12 +13,13 @@
     position: relative;
 
     @include tablet {
-        min-height: 100vh;
+        height: 100%;
     }
 
     .overlay {
         background-color: #1a202cf1;
-        height: 100vh;
+        min-height: 100vh;
+        display: flex;
 
     }
 }
@@ -30,6 +31,11 @@
     width: 70%;
     margin: auto;
     align-content: center;
+
+    @include tablet {
+        width: auto;
+        padding: 0 20px;
+    }
 }
 .container_2 {
     display: flex;
