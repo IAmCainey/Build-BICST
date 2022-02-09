@@ -3,6 +3,7 @@ module.exports = {
     domains: ['res.cloudinary.com',
       'images.unsplash.com',
       'cdn.sanity.io',
+      'undraw.co',
     ],
   },
   rewrites: () => [STUDIO_REWRITE],
