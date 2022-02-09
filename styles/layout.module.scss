@@ -3,8 +3,7 @@
 @import './var';
 
 .container {
-    margin: 200px auto;
-    max-width: 70%;
+    margin: 0 auto;
     position: relative;
 
     @include tablet {
