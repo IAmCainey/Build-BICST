@@ -45,7 +45,7 @@ const topNav = () => {
                                     </Link>
                                     <Link href="/the-hub/hire">
                                         <a className={style.link}>
-                                            hall hire
+                                            Bookings
                                         </a>
                                     </Link>
                                 </div>
@@ -57,7 +57,7 @@ const topNav = () => {
                             Articles
                         </a>
                     </Link>
-                    <Link href="/the-hub/hire">
+                    <Link href="/bookings">
                         <a className='btn-reverse lm-md'>Book Now</a>
                     </Link>
                 </div>
