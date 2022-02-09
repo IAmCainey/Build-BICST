@@ -43,7 +43,7 @@ const topNav = () => {
                                             Gallories
                                         </a>
                                     </Link>
-                                    <Link href="/the-hub/hire">
+                                    <Link href="/bookings">
                                         <a className={style.link}>
                                             Bookings
                                         </a>
