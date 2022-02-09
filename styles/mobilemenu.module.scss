@@ -1,0 +1,32 @@
+// Imports
+@import './mixins';
+@import './var';
+
+.container {
+    display: none;
+
+        @include tablet {
+            width: auto;
+            display: flex;
+            flex-direction: row;
+            padding: 0 20px;
+            background-color: $dark;
+            position: relative;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 999;        
+        }
+
+    * > {
+        flex: 1 50%;
+    }
+}
+
+.title {
+    font-size: 1.4rem;
+}
+
+.burger {
+    font-size: 2rem;
+    color: $light;
+}
