@@ -4,12 +4,12 @@ import Link from 'next/link'
 import Image from 'next/image'
 
 // Styling
-import Layout from '../layouts/main'
-import Bookings from '../styles/bookings.module.scss'
+import Layout from '../../layouts/main'
+import Bookings from '../../styles/bookings.module.scss'
 
 // Images
-import Hall from '../public/images/facilities/IMG_0850.JPG'
-import Pitch from '../public/images/pitches/1.jpg'
+import Hall from '../../public/images/facilities/IMG_0850.JPG'
+import Pitch from '../../public/images/pitches/1.jpg'
 
 const bookings = (props) => {
     return (
