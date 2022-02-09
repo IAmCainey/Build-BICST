@@ -139,7 +139,7 @@ export default function Terms() {
                 the cost of repair of any damage done to any part of the premises including the curtilage thereof or the contents of the premises
                 all claims, losses, damages and costs in respect of damage or loss of property or injury to persons arising as a result of the use of the premises (including the storage of equipment) by the Hirer, and
                 All claims, losses, damages and costs suffered or incurred as a result of any nuisance caused to a third party as a result of the use of the premises by the Hirer.
-                The Hirer shall take out adequate insurance to insure the Hirer and members of the Hirer’s organization and invitees against the Hirer’s liability under paragraph 11(i) and all claims arising as a result of the hire and on demand shall produce the policy and current receipt or other evidence of cover to the Hall Secretary. Failure to produce such policy and evidence of cover will render the hiring void and enable the Hall Management Committee to rehire the premises to another hirer.
+                The Hirer shall take out adequate insurance to insure the Hirer and members of the Hirer&quot;s organization and invitees against the Hirer&quot;s liability under paragraph 11(i) and all claims arising as a result of the hire and on demand shall produce the policy and current receipt or other evidence of cover to the Hall Secretary. Failure to produce such policy and evidence of cover will render the hiring void and enable the Hall Management Committee to rehire the premises to another hirer.
                 Cav Park Community Hub is insured against any claims arising out of its own negligence.
             </p>
 
@@ -161,7 +161,7 @@ export default function Terms() {
                 Sale of Goods
             </h3>
             <p>
-                The Hirer shall, if selling goods on the premises, comply with Fair Trading Laws and any code of practice used in connection with such sales. In particular, the Hirer shall ensure that the total prices of all goods and services are prominently displayed, as shall be the organizer&quot;s name and address and that any discounts offered are based only on Manufacturers’ Recommended Retail Prices.
+                The Hirer shall, if selling goods on the premises, comply with Fair Trading Laws and any code of practice used in connection with such sales. In particular, the Hirer shall ensure that the total prices of all goods and services are prominently displayed, as shall be the organizer&quot;s name and address and that any discounts offered are based only on Manufacturers&quot; Recommended Retail Prices.
             </p>
 
             <h3>
