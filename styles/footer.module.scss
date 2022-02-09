@@ -17,7 +17,7 @@
 
 .container {
     min-height: 300px;
-    width: 70%;
+    max-width: 70%;
     margin: auto;
     display: flex;
     color: $light;
@@ -26,6 +26,9 @@
 
     @include tablet {
         flex-wrap: wrap;
+        width: 100%;
+        padding: 0;
+        gap: 0;
     }
 }
 
@@ -51,6 +54,10 @@
     display: block;
     text-transform: uppercase;
     text-align: center;
+
+    @include tablet {
+        padding: 0;
+    }
 
     &:after {
         border-bottom: 1px solid $yellow;
