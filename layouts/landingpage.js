@@ -4,7 +4,7 @@ import TopNav from '../components/topnav'
 
 import CookieConsent from '../components/cookies'
 
-// Styling'
+// Styling
 
 const LandingLayout = props => {
     return (
