@@ -21,7 +21,6 @@ export default function Pitch() {
                 </div>
 
                 <div>
-                    <iframe src="https://koalendar.com/e/hub-booking-form?embed=true" width="100%" height="800px" frameBorder="0"></iframe>
                 </div>
             </div>
         </Layout>
