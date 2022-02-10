@@ -11,13 +11,13 @@ export default function Pitch() {
     return (
         <Layout>
             <Head>
-                <title>Bookings @ BICST</title>
+                <title>Pitch Bookings @ BICST</title>
             </Head>
 
             <div className='flex'>
                 <div>
-                    <h2>Hub Booking Form</h2>
-                    <p>please use the form only for booking the hub</p>
+                    <h2>Pitch Booking Form</h2>
+                    <p><strong>coming soon</strong></p>
                 </div>
 
                 <div>

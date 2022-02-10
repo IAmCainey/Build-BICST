@@ -58,7 +58,7 @@ const bookings = (props) => {
                         src={Pitch}
                         alt='this is an alt tag'
                     />
-                    <h4>office hire</h4>
+                    <h4>meeting room hire</h4>
                     <p className={Bookings.text}>
                         Looking to book the hubs community hall for a party, function or event.
                     </p>

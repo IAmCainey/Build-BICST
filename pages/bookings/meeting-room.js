@@ -11,13 +11,13 @@ export default function MeetingRoom() {
     return (
         <Layout>
             <Head>
-                <title>Bookings @ BICST</title>
+                <title>Meeting Room Bookings @ BICST</title>
             </Head>
 
             <div className='flex'>
                 <div>
-                    <h2>Hub Booking Form</h2>
-                    <p>please use the form only for booking the hub</p>
+                    <h2>Meeting Room Booking Form</h2>
+                    <p><strong>coming soon</strong></p>
                 </div>
 
                 <div>
