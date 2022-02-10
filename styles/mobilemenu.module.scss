@@ -55,7 +55,7 @@
     text-align: right;
 
     .links {
-        padding: 50px;
+        padding: 100px 50px;
         display: flex;
         flex-direction: column;
         gap: 50px;
@@ -67,6 +67,12 @@
             color: $light;
             font-family: $heading;
             letter-spacing: 8px;
+            text-transform: capitalize;
+
+            &::first-letter {
+                color: $yellow;
+                font-size: 1.6rem;
+            }
 
             &:hover {
                 color: $yellow;
