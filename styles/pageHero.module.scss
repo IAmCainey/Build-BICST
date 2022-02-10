@@ -3,8 +3,18 @@
 
 
 .hero {
-    background-color: $dark;
     min-height: 100%;
+    background-image: url('../public/images/hub1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    .overlay {
+        background-color: #1a202cf1;
+        min-height: 100%;
+        display: flex;
+
+    }
 }
 
 .container {
