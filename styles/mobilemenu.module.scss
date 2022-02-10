@@ -38,13 +38,15 @@
 .burger_2 {
     &:hover .dropdown {
         display: flex;
+        right: 0;
+        transition: ease-in-out 0.5s;
     }
 }
 
 .dropdown {
-    display: none;
+    display: flex;
     position: fixed;
-    right: 0;
+    right: -80vw;
     top: 0;
     height: 100vh;
     width: 80vw;
@@ -53,6 +55,7 @@
     padding: 0;
     opacity: .9;
     text-align: right;
+    transition: ease-in-out 0.5s;
 
     .links {
         padding: 100px 50px;
