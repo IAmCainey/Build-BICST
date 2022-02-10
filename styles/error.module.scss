@@ -5,15 +5,30 @@
 .container {
     display: flex;
     max-width: 80%;
-    min-height: 100vh;
+    max-height: 100vh;
     margin: auto;
     justify-content: center;
     align-items: center;
     text-align: center;
+    background-image: url('../public/images/404.svg');
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @include tablet {
+        max-height: 100%;
+        max-width: 100%;
+        background-position: center center;
+
+    }
 }
 
 .title {
     font-size: 6rem;
+
+    @include tablet {
+        font-size: 3rem;
+    }
 }
 
 .span {

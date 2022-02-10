@@ -1,6 +1,5 @@
 // Components
 import Head from 'next/head'
-
 import Router from 'next/router'
 
 // Styling
