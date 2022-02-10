@@ -16,6 +16,10 @@ p {
     letter-spacing: 3px;
     font-size: 1.8rem;
     font-family: $text;
+
+    @include tablet {
+        font-size: 1.4rem;
+    }
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -28,17 +32,23 @@ h1 {
     font-size: 4rem;
 
     @include tablet {
-        font-size: 2rem;
+        font-size: 1.4rem;
     }
 }
 
 h2 {
     font-size: 3rem;
+    @include tablet {
+        font-size: 1.4rem;
+    }
 }
 
 h3 {
     font-size: 3rem;
     color: $yellow;
+    @include tablet {
+        font-size: 1.4rem;
+    }
 }
 
 span {
