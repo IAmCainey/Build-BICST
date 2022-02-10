@@ -23,7 +23,7 @@ export default function MobileMenu() {
                         <Link href='/'>
                             <a className={style.link}>Home</a>
                         </Link>
-                        <Link href='/gallery'>
+                        <Link href='/galleries'>
                             <a className={style.link}>Gallery</a>
                         </Link>
                         <Link href='/bookings'>
