@@ -6,12 +6,12 @@
     display: none;
 
         @include tablet {
-            width: auto;
+            width: 100%;
             display: flex;
             flex-direction: row;
-            padding: 0 20px;
+            padding: 0;
             background-color: $dark;
-            position: relative;
+            position: fixed;
             justify-content: space-between;
             align-items: center;
             z-index: 999;        
@@ -24,9 +24,54 @@
 
 .title {
     font-size: 1.4rem;
+    padding-left: 20px;
 }
 
 .burger {
     font-size: 2rem;
     color: $light;
+    right: 20px;
+    position: relative;
+
 }
+
+.burger_2 {
+    &:hover .dropdown {
+        display: flex;
+    }
+}
+
+.dropdown {
+    display: none;
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    width: 80vw;
+    background-color: $dark;
+    margin: 0;
+    padding: 0;
+    opacity: .9;
+    text-align: right;
+
+    .links {
+        padding: 50px;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        width: 100%;
+
+        .link {
+            text-decoration: none;
+            font-size: 1.4rem;
+            color: $light;
+            font-family: $heading;
+            letter-spacing: 8px;
+
+            &:hover {
+                color: $yellow;
+            }
+        }
+    }
+}
+
