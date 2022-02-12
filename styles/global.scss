@@ -22,6 +22,16 @@ p {
     }
 }
 
+a {
+    color: $dark-blue;
+    text-decoration: none;
+    font-size: 1.4rem;
+    
+    &:hover {
+        color: $dark;
+    }
+}
+
 h1, h2, h3, h4, h5, h6 {
     text-transform: uppercase;
     letter-spacing: 10px;
