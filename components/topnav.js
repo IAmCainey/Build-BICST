@@ -52,9 +52,9 @@ const topNav = () => {
                             </div>
                         </a>
                     </Link>
-                    <Link href="/articles">
+                    <Link href="/contact">
                         <a className={style.link}>
-                            Articles
+                            Contact Us
                         </a>
                     </Link>
                     <Link href="/bookings">

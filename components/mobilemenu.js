@@ -29,9 +29,6 @@ export default function MobileMenu() {
                         <Link href='/bookings'>
                             <a className={style.link}>Bookings</a>
                         </Link>
-                        <Link href='/events'>
-                            <a className={style.link}>Events</a>
-                        </Link>
                         <Link href='/contact'>
                             <a className={style.link}>contact</a>
                         </Link>
