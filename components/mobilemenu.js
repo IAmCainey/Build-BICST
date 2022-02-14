@@ -32,6 +32,9 @@ export default function MobileMenu() {
                         <Link href='/contact'>
                             <a className={style.link}>contact</a>
                         </Link>
+                        <Link href="/bookings">
+                            <a className='btn-reverse text-center'>Book Now</a>
+                        </Link>
                     </div>
                 </div>
             </div>
