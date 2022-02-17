@@ -42,9 +42,10 @@
     color: $light;
     text-decoration: none;
     text-transform: uppercase;
-    padding: 36px 14px;
+    padding: 30px 14px;
     font-weight: 700;
     letter-spacing: 5px;
+    font-size: 1rem;
 
     &:hover {
         color: $dark;
@@ -86,7 +87,7 @@
         &:hover .dropdown {
             display: block;
             position: absolute;
-            margin-top: 36px;
+            margin-top: 30px;
             left: 0;
     }
 }
