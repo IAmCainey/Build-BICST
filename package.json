@@ -9,11 +9,6 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@portabletext/react": "^1.0.2",
-    "@sanity/block-content-to-react": "^3.0.0",
-    "@sanity/client": "^2.23.2",
-    "@sanity/image-url": "^1.0.1",
-    "groq": "^2.15.0",
     "next": "^11.1.4",
     "react": "17.0.2",
     "react-cookie-consent": "^7.2.1",
