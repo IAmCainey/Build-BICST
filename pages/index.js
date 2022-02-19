@@ -23,7 +23,7 @@ function scroll() {
   document.getElementById('sports').scrollInToView()
 }
 
-const LandingPage = () => {
+export default function HomePage() {
   return (
     <Layout>
       <Head>
@@ -41,9 +41,9 @@ const LandingPage = () => {
                 </span>
               </div>
               <div className='centered'>
-                <h3>
-                  Next Event
-                </h3>
+                <div>
+
+                </div>
               </div>
             </div>
             <div>
@@ -144,5 +144,3 @@ const LandingPage = () => {
     </Layout>
   )
 }
-
-export default LandingPage
