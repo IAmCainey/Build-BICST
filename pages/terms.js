@@ -9,10 +9,25 @@ import Layout from '../layouts/main'
 
 
 export default function Terms() {
+
+    const pageTitle = 'Hubs Terms - BICST'
+    const description = 'Barrow Island Community Sports Trust, please make sure to read and understand the terms of use setout by the trust.'
+    const twitterHandle = '@bicstrust'
+
     return (
         <Layout>
             <Head>
-                <title>Terms & Conditions @ BICST</title>
+                <meta name="viewport" content="width=device-width, initial-scale=1" />
+                <meta charSet="utf-8" />
+
+                <meta name="twitter:card" content="summary" key="twcard" />
+                <meta name="twitter:creator" content={twitterHandle} key="twhandle" />
+
+                <meta property="og:title" content={pageTitle} key="ogtitle" />
+                <meta property="og:description" content={description} key="ogdesc" />
+
+                <meta name="description" content={description} />
+                <title>{pageTitle}</title>
             </Head>
             <h1>Terms and Conditions</h1>
             <p>

@@ -7,10 +7,16 @@ import style from '../styles/error.module.scss'
 
 
 export default function Custom404() {
+
+    const pageTitle = 'Error 404 - BICST'
+
     return (
         <div className={style.container}>
             <Head>
-                <title>404 Not Found @ BICST</title>
+                <meta name="viewport" content="width=device-width, initial-scale=1" />
+                <meta charSet="utf-8" />
+
+                <title>{pageTitle}</title>
             </Head>
             <div>
                 <h1 className={style.title}><span className={style.span}>error</span> | 404</h1>

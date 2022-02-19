@@ -9,10 +9,13 @@ import Layout from '../../layouts/main'
 
 
 export default function Hub() {
+
+    const pageTitle = 'Booking Confirmed - BICST'
+
     return (
         <Layout>
             <Head>
-                <title>Booking Confirmed @ BICST</title>
+                <title>{pageTitle}</title>
             </Head>
 
             <div className='flex centered'>

@@ -9,10 +9,25 @@ import Layout from '../layouts/main'
 
 
 export default function Privacy() {
+
+    const pageTitle = 'Privacy statement - BICST'
+    const description = 'Barrow Island Community Sports Trust, please make sure you read and understand the privacy policy setout by the trust.'
+    const twitterHandle = '@bicstrust'
+
     return (
         <Layout>
             <Head>
-                <title>Privacy @ BICST</title>
+                <meta name="viewport" content="width=device-width, initial-scale=1" />
+                <meta charSet="utf-8" />
+
+                <meta name="twitter:card" content="summary" key="twcard" />
+                <meta name="twitter:creator" content={twitterHandle} key="twhandle" />
+
+                <meta property="og:title" content={pageTitle} key="ogtitle" />
+                <meta property="og:description" content={description} key="ogdesc" />
+
+                <meta name="description" content={description} />
+                <title>{pageTitle}</title>
             </Head>
             <h1>Privacy Policy</h1>
 

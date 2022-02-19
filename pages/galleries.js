@@ -20,10 +20,25 @@ import Seven from '../public/images/facilities/IMG_0856.JPG'
 const pageTitle = `The Hubs Facilities`
 
 const Galleries = () => {
+
+    const pageTitle = 'The Hubs Gallery - BICST'
+    const description = 'Barrow Island Community Sports Trust, checkout some pictures from events, parties and just of the community'
+    const twitterHandle = '@bicstrust'
+
     return (
         <Layout>
             <Head>
-                <title>The Gallory @ BICST</title>
+                <meta name="viewport" content="width=device-width, initial-scale=1" />
+                <meta charSet="utf-8" />
+
+                <meta name="twitter:card" content="summary" key="twcard" />
+                <meta name="twitter:creator" content={twitterHandle} key="twhandle" />
+
+                <meta property="og:title" content={pageTitle} key="ogtitle" />
+                <meta property="og:description" content={description} key="ogdesc" />
+
+                <meta name="description" content={description} />
+                <title>{pageTitle}</title>
             </Head>
             <section id="about">
                 <h1>The Hub</h1>
