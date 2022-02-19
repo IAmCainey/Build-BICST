@@ -8,7 +8,7 @@ import CookieConsent from '../components/cookies'
 // Styling
 import style from '../styles/layout.module.scss'
 
-export default function MainLayOut(props) {
+export default function MainLayOut({ children, pageTitle, description, ...props }) {
     return (
 
         <>
@@ -16,7 +16,7 @@ export default function MainLayOut(props) {
             <MobileMenu />
             <PageHero />
             <div className={style.container}>
-                {props.children}
+                {children}
             </div>
             <Footer />
             <CookieConsent />
