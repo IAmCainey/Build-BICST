@@ -27,18 +27,17 @@ export default function Pitch() {
 
                 <meta name="description" content={description} />
                 <title>{pageTitle}</title>
-            </Head>>Pitch Bookings @ BICST</title>
             </Head >
 
-        <div className='flex'>
-            <div>
-                <h2>Pitch Booking Form</h2>
-                <p><strong>coming soon</strong></p>
-            </div>
+            <div className='flex'>
+                <div>
+                    <h2>Pitch Booking Form</h2>
+                    <p><strong>coming soon</strong></p>
+                </div>
 
-            <div>
+                <div>
+                </div>
             </div>
-        </div>
         </Layout >
     )
 }
