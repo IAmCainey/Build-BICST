@@ -3,8 +3,10 @@
 
 
 .cards {
-    display: flex;
-    gap: 10px;
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    grid-template-rows: masonry;
+    gap: 20px;
     margin-top: 50px;
 
     @include tablet {
@@ -13,10 +15,12 @@
 }
 
 .card {
-    flex: 1;
+
     background-color: $light;
     padding: 10px;
     border-radius: 15px;
+    position: relative;
+    height: auto;
 
     .title {
         text-align: center;
@@ -30,10 +34,15 @@
 
 .bottom {
     display: flex;
+    bottom: 0;
+    position: relative;
+    width: 100%;
 
     > * {
         flex: 1;
         align-items: center;
+        bottom: 0;
+        width: 100%;
     }
 }
 

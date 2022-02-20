@@ -1,6 +1,7 @@
 // Components
-import Link from 'next/link'
 import Image from 'next/image'
+import { AiOutlineCalendar, AiOutlineClockCircle } from 'react-icons/ai'
+
 
 //Layout & Styling
 import Layout from '../../layouts/main'
@@ -27,10 +28,10 @@ export default function Event(data) {
                     /> */}
 
                     <p className={style.eventInfo}>
-                        Event Date : <span className={style.span}>{post.event.eventDate}</span>
+                        <AiOutlineCalendar className='light-text' />  Event Date : <span className={style.span}>{post.event.eventDate}</span>
                     </p>
                     <p className={style.eventInfo}>
-                        Start Time : <span className={style.span}>{post.event.eventStartTime}</span>
+                        <AiOutlineClockCircle className='light-text' />  Start Time : <span className={style.span}>{post.event.eventStartTime}</span>
                     </p>
                 </div>
             </div>
