@@ -1,5 +1,6 @@
 // Components
 import Link from 'next/link'
+import Image from 'next/image'
 
 //Layout & Styling
 import Layout from '../../layouts/main'
@@ -17,7 +18,13 @@ export default function Event(data) {
                 </div>
 
                 <div>
-                    <img className={style.f__image} src={post.featuredImage.node.sourceUrl} alt={post.featuredImage.node.altText} />
+                    {/* <Image
+                        className={style.f__image}
+                        src={post.featuredImage.node.sourceUrl}
+                        alt={post.featuredImage.node.altText}
+                        width='300'
+                        height='200'
+                    /> */}
 
                     <p className={style.eventInfo}>
                         Event Date : <span className={style.span}>{post.event.eventDate}</span>

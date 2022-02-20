@@ -4,6 +4,7 @@ module.exports = {
       'images.unsplash.com',
       'cdn.sanity.io',
       'undraw.co',
+      'wp.paulcaine.co.uk',
     ],
   },
   rewrites: () => [STUDIO_REWRITE],
