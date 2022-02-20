@@ -2,34 +2,80 @@
 @import './var';
 
 
-.content {
-    margin: 100px auto;
-    width: 100%;
-}
-
-.date {
-    background-color: $yellow;
-    padding: 5px 10px;
-    color: $dark;
-    font-weight: 600;
-    letter-spacing: 3px;
-    position: absolute;
-    right: 0;
-}
-
-.events {
+.cards {
     display: flex;
-    flex: 1;
-    flex-direction: column;
+    gap: 10px;
+    margin-top: 50px;
 
-    .event {
-        position: relative;
-        margin-bottom: 50px;
-        border-bottom: 1px solid $dark;
-        padding: 50px 0;
+    @include tablet {
+        flex-direction: column;
     }
 }
 
-.btn {
-    text-decoration: none;
+.card {
+    flex: 1;
+    background-color: $light;
+    padding: 10px;
+    border-radius: 15px;
+
+    .title {
+        text-align: center;
+        color: $dark;
+        font-size: 1.4rem;
+        text-decoration: underline;
+        line-height: 10px;
+        font-weight: 300;
+    }
+}
+
+.bottom {
+    display: flex;
+
+    > * {
+        flex: 1;
+        align-items: center;
+    }
+}
+
+.text {
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.eventDate {
+    background: yellow;
+    border-radius: 5px;
+    width: fit-content;
+    text-align: center;
+}
+
+.single {
+    display: flex;
+    gap: 20px;
+
+    @include tablet {
+        flex-direction: column-reverse;
+    }
+
+    > * {
+        flex: 0 50%;
+    }
+}
+
+.f__image {
+    max-height: 300px;
+    width: auto;
+}
+
+.eventInfo {
+    font-size: 1.2rem;
+    color: $yellow;
+    background-color: $dark;
+    width: fit-content;
+    padding: 5px 10px;
+    border-left: solid 10px $yellow;
+
+    .span {
+        color: $light;
+    }
 }

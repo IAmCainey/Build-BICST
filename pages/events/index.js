@@ -3,27 +3,45 @@ import Link from 'next/link'
 
 //Layout & Styling
 import Layout from '../../layouts/main'
+import style from '../../styles/events.module.scss'
 
 export default function Events({ posts }) {
     return (
         <Layout>
-            <h1>this is the events lists page</h1>
+            <h1>Upcoming events</h1>
 
-            {
-                posts.nodes.map(post => {
-                    return (
-                        <ul key={post.slug}>
-                            <li><Link href={`/events/${post.slug}`}>
-                                <a>{post.title}</a>
-                            </Link></li>
-                        </ul>
-                    )
-                })
-            }
+            <div className={style.cards}>
+                {
+                    posts.nodes.map(post => {
+                        return (
+                            <div key={post.slug} className={style.card}>
+                                <h2 className={style.title}>{post.title}</h2>
+
+                                <p className={style.text}>
+                                    {post.event.shortDescription}
+                                </p>
+
+                                <div className={style.bottom}>
+                                    <div>
+                                        <Link href={`/events/${post.slug}`}>
+                                            <a>Read Now</a>
+                                        </Link>
+                                    </div>
+                                    <div className={style.eventDate}>
+                                        {post.event.eventDate}
+                                    </div>
+                                </div>
+                            </div>
+                        )
+                    })
+                }
+            </div>
 
         </Layout>
     )
 }
+
+
 
 export async function getStaticProps() {
     const res = await fetch('http://wp.paulcaine.co.uk/bicst/graphql', {
@@ -31,11 +49,15 @@ export async function getStaticProps() {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
             query: `
-            query MyQuery {
+            query AllEvents {
                 posts {
                   nodes {
                     title
                     slug
+                    event {
+                      eventDate
+                      shortDescription
+                    }
                   }
                 }
               }

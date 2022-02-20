@@ -3,15 +3,30 @@ import Link from 'next/link'
 
 //Layout & Styling
 import Layout from '../../layouts/main'
+import style from '../../styles/events.module.scss'
 
 export default function Event(data) {
 
     const post = data.post
     return (
         <Layout>
-            <h1>{post.title}</h1>
+            <div className={style.single}>
+                <div>
+                    <h1>{post.title}</h1>
+                    <article dangerouslySetInnerHTML={{ __html: post.content }}></article>
+                </div>
 
-            <article dangerouslySetInnerHTML={{ __html: post.content }}></article>
+                <div>
+                    <img className={style.f__image} src={post.featuredImage.node.sourceUrl} alt={post.featuredImage.node.altText} />
+
+                    <p className={style.eventInfo}>
+                        Event Date : <span className={style.span}>{post.event.eventDate}</span>
+                    </p>
+                    <p className={style.eventInfo}>
+                        Start Time : <span className={style.span}>{post.event.eventStartTime}</span>
+                    </p>
+                </div>
+            </div>
         </Layout>
     )
 }
@@ -30,8 +45,13 @@ export async function getStaticProps(context) {
                     featuredImage {
                         node {
                             sourceUrl
+                            altText
                         }
                     }
+                    event {
+                        eventDate
+                        eventStartTime
+                      }
                 }
             }
     `,
@@ -69,6 +89,10 @@ export async function getStaticPaths() {
                         sourceUrl
                       }
                     }
+                    event {
+                        eventDate
+                        eventStartTime
+                      }
                   }
                 }
               }
