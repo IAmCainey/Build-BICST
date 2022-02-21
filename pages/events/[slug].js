@@ -1,6 +1,9 @@
 // Components
 import Image from 'next/image'
-import { AiOutlineCalendar, AiOutlineClockCircle } from 'react-icons/ai'
+import Link from 'next/link'
+import { AiOutlineCalendar, AiOutlineClockCircle, AiOutlineUser, AiOutlinePhone, AiOutlineMail } from 'react-icons/ai'
+import { HiOutlineTicket } from 'react-icons/hi'
+
 
 
 //Layout & Styling
@@ -18,7 +21,7 @@ export default function Event(data) {
                     <article dangerouslySetInnerHTML={{ __html: post.content }}></article>
                 </div>
 
-                <div>
+                <div className={style.right}>
                     {/* <Image
                         className={style.f__image}
                         src={post.featuredImage.node.sourceUrl}
@@ -32,6 +35,18 @@ export default function Event(data) {
                     </p>
                     <p className={style.eventInfo}>
                         <AiOutlineClockCircle className='light-text' />  Start Time : <span className={style.span}>{post.event.eventStartTime}</span>
+                    </p>
+                    <p className={style.eventInfo}>
+                        <AiOutlineUser className='light-text' />  Contact Name : <span className={style.span}>{post.event.contactName}</span>
+                    </p>
+                    <p className={style.eventInfo}>
+                        <AiOutlinePhone className='light-text' />  Number : <span className={style.span}>{post.event.contactNumber}</span>
+                    </p>
+                    <p className={style.eventInfo}>
+                        <AiOutlineMail className='light-text' />  Email : <span className={style.span}><Link href={`mailto:${post.event.contactEmail}`}><a className={style.link}>{post.event.contactEmail}</a></Link></span>
+                    </p>
+                    <p className={style.eventInfo}>
+                        <HiOutlineTicket className='light-text' />  Tickets : <span className={style.span}><Link href={`${post.event.getTickets}`}><a className={style.link}>Get Tickets</a></Link></span>
                     </p>
                 </div>
             </div>
@@ -59,6 +74,10 @@ export async function getStaticProps(context) {
                     event {
                         eventDate
                         eventStartTime
+                        contactEmail
+                        contactName
+                        contactNumber
+                        getTickets
                       }
                 }
             }
@@ -100,6 +119,10 @@ export async function getStaticPaths() {
                     event {
                         eventDate
                         eventStartTime
+                        contactEmail
+                        contactName
+                        contactNumber
+                        getTickets
                       }
                   }
                 }

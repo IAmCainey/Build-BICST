@@ -59,16 +59,15 @@
 }
 
 .single {
-    display: flex;
-    gap: 20px;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 10px;
 
     @include tablet {
-        flex-direction: column-reverse;
+        grid-template-columns: 100%;
     }
 
-    > * {
-        flex: 0 50%;
-    }
+    
 }
 
 .f__image {
@@ -83,8 +82,21 @@
     width: fit-content;
     padding: 5px 10px;
     border-left: solid 10px $yellow;
+    transition: ease-in-out .3s;
+
+    &:hover {
+        transition: ease-in-out .3s;
+        border-left: solid 10px $dark;
+    }
 
     .span {
         color: $light;
+    }
+
+    .link {
+        color: $light;
+         &:hover {
+             color: $yellow;
+         }
     }
 }
