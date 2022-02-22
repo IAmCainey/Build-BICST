@@ -44,7 +44,7 @@ export default function Events({ posts }) {
 
 
 export async function getStaticProps() {
-    const res = await fetch('http://wp.paulcaine.co.uk/bicst/graphql', {
+    const res = await fetch('https://wp.paulcaine.co.uk/bicst/graphql', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
