@@ -24,7 +24,7 @@ export default function Events({ posts }) {
                                 <div className={style.bottom}>
                                     <div>
                                         <Link href={`/events/${post.slug}`}>
-                                            <a>Read Now</a>
+                                            <a className={style.link}>Read Now</a>
                                         </Link>
                                     </div>
                                     <div className={style.eventDate}>
