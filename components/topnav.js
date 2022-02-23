@@ -18,7 +18,7 @@ const topNav = () => {
                         <a className={style.titleLink}>
                             <Image
                                 src={logo}
-                                alt="The COOP Barrow Island"
+                                alt="Barrow Island Community Sports Trust"
                                 className={style.logo}
                                 placeholder="blur"
                                 height={75}
