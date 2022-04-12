@@ -5,7 +5,7 @@ import Image from "next/image";
 import sponsorLotto from "../public/images/sponsors/lotto.png";
 
 // Styling
-import style from "../styles/footer.module.scss";
+import style from "../css/footer.module.css";
 
 // Icons
 import {

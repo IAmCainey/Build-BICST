@@ -1,8 +1,8 @@
 // Components
-import Router from 'next/router'
+import Router from "next/router";
 
 // Styling
-import '../styles/global.scss'
+import "../css/global.css";
 
 Router.onRouteChangeComplete = () => {
   window.scroll({
@@ -13,13 +13,9 @@ Router.onRouteChangeComplete = () => {
 
 function MyApp({ Component, pageProps }) {
   return (
-
     <div>
-
       <Component {...pageProps} />
-
     </div>
-
-  )
+  );
 }
-export default MyApp
+export default MyApp;

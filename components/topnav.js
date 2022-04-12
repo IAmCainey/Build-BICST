@@ -3,7 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 // Styling
-import style from "../styles/topnav.module.scss";
+import style from "../css/topnav.module.css";
 
 // Images
 import logo from "../public/images/logo.png";

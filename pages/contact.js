@@ -3,7 +3,7 @@ import Head from "next/head";
 import Layout from "../layouts/main";
 
 // Styling
-import style from "../styles/contact.module.scss";
+import style from "../css/contact.module.css";
 
 export default function Contact() {
   const pageTitle = "Contact Us - BICST";
