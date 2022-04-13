@@ -8,8 +8,8 @@ import Layout from "../../layouts/main";
 import Bookings from "../../css/bookings.module.css";
 
 // Images
-import Hall from "../../public/images/facilities/IMG_0850.JPG";
-import Pitch from "../../public/images/pitches/1.jpg";
+import Hall from "../../public/images/facilities/IMG_0850.webp";
+import Pitch from "../../public/images/pitches/1.webp";
 
 const bookings = (props) => {
   const pageTitle = "Bookings - BICST";

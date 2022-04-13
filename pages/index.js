@@ -9,7 +9,7 @@ import { GiBullseye, GiSunglasses } from "react-icons/gi";
 
 // Profile Images
 import profileRob from "../public/images/profiles/rob.jpg";
-import profileDebbie from "../public/images/profiles/debbie.jpeg";
+import profileDebbie from "../public/images/profiles/debbie.webp";
 import profileLaura from "../public/images/profiles/laura.webp";
 
 // Next Imports

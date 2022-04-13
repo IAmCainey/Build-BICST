@@ -1,27 +1,25 @@
-@import './mixins';
-@import './var';
-
+@import "./mixins";
+@import "./var";
 
 .hero {
+  min-height: 100%;
+  background-image: url("../public/images/hub1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  .overlay {
+    background-color: #1a202cf1;
     min-height: 100%;
-    background-image: url('../public/images/hub1.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-
-    .overlay {
-        background-color: #1a202cf1;
-        min-height: 100%;
-        display: flex;
-
-    }
+    display: flex;
+  }
 }
 
 .container {
-    width: 80%;
-    margin: auto;
+  width: 80%;
+  margin: auto;
 }
 
 .title {
-    color: $yellow;
+  color: $yellow;
 }

@@ -9,12 +9,12 @@ import style from "../css/facilities.module.css";
 
 // Images
 import One from "../public/images/facilities/IMG_0830.webp";
-import Two from "../public/images/facilities/IMG_0835.JPG";
-import Three from "../public/images/facilities/IMG_0839.JPG";
-import Four from "../public/images/facilities/IMG_0844.JPG";
-import Five from "../public/images/facilities/IMG_0847.JPG";
-import Six from "../public/images/facilities/IMG_0850.JPG";
-import Seven from "../public/images/facilities/IMG_0856.JPG";
+import Two from "../public/images/facilities/IMG_0835.webp";
+import Three from "../public/images/facilities/IMG_0839.webp";
+import Four from "../public/images/facilities/IMG_0844.webp";
+import Five from "../public/images/facilities/IMG_0847.webp";
+import Six from "../public/images/facilities/IMG_0850.webp";
+import Seven from "../public/images/facilities/IMG_0856.webp";
 
 const pageTitle = `The Hubs Facilities`;
 
