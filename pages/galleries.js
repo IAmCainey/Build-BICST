@@ -8,7 +8,7 @@ import Layout from "../layouts/main";
 import style from "../css/facilities.module.css";
 
 // Images
-import One from "../public/images/facilities/IMG_0830.JPG";
+import One from "../public/images/facilities/IMG_0830.webp";
 import Two from "../public/images/facilities/IMG_0835.JPG";
 import Three from "../public/images/facilities/IMG_0839.JPG";
 import Four from "../public/images/facilities/IMG_0844.JPG";
