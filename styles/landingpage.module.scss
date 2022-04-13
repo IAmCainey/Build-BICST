@@ -1,75 +1,72 @@
-@import './var';
-@import './mixins';
-
+@import "./var";
+@import "./mixins";
 
 .hero {
-    background-color: $dark;
+  background-color: $dark;
+  min-height: 100vh;
+  color: $light;
+  background-image: url("../public/images/facilities/IMG_0830.webp");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+
+  @include tablet {
+    height: 100%;
+  }
+
+  .overlay {
+    background-color: #1a202cf1;
     min-height: 100vh;
-    color: $light;
-    background-image: url('../public/images/facilities/IMG_0830.JPG');
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    position: relative;
-
-    @include tablet {
-        height: 100%;
-    }
-
-    .overlay {
-        background-color: #1a202cf1;
-        min-height: 100vh;
-        display: flex;
-
-    }
+    display: flex;
+  }
 }
 
 .container {
-    display: flex;
-    height: 100%;
-    align-items: center;
-    width: 70%;
-    margin: auto;
-    align-content: center;
+  display: flex;
+  height: 100%;
+  align-items: center;
+  width: 70%;
+  margin: auto;
+  align-content: center;
 
-    @include tablet {
-        width: auto;
-        padding: 0 20px;
-    }
+  @include tablet {
+    width: auto;
+    padding: 0 20px;
+  }
 }
 .container_2 {
-    display: flex;
-    justify-content: center;
-    width: 50%;
-    margin: auto;
-    flex-direction: column;
-    text-align: center;
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  margin: auto;
+  flex-direction: column;
+  text-align: center;
 
-    @include tablet {
-        width: 100%;
-    }
+  @include tablet {
+    width: 100%;
+  }
 }
 
 .title {
-    color: $light;
-    letter-spacing: 10px;
-    font-size: 3rem;
+  color: $light;
+  letter-spacing: 10px;
+  font-size: 3rem;
 }
 
 .span {
-    color: $yellow;
-    font-size: 1.8rem;
-    letter-spacing: 5px;
+  color: $yellow;
+  font-size: 1.8rem;
+  letter-spacing: 5px;
 }
 
 .mission {
-    padding: 100px 10px;
-    background-color: $dark-blue;
-    color: $light;
+  padding: 100px 10px;
+  background-color: $dark-blue;
+  color: $light;
 }
 
 .theTeam {
-    max-height:100%;
-    padding: 100px 10px;
+  max-height: 100%;
+  padding: 100px 10px;
 }
-
