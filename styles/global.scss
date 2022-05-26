@@ -3,164 +3,168 @@
 @import "./var";
 
 :root {
-    counter-reset: masonry;
-  }
+  counter-reset: masonry;
+}
 
-html, body {
-    margin: 0;
-    padding: 0;
-    scroll-behavior: smooth;
+html,
+body {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
 }
 
 p {
-    letter-spacing: 3px;
-    font-size: 1.8rem;
-    font-family: $text;
+  letter-spacing: 3px;
+  font-size: 1.8rem;
+  font-family: $text;
 
-    @include tablet {
-        font-size: 1.4rem;
-    }
+  @include tablet {
+    font-size: 1.4rem;
+  }
 }
 
 a {
-    color: $dark-blue;
-    text-decoration: none;
-    font-size: 1.2rem;
-    
-    &:hover {
-        color: $dark;
-    }
+  color: $dark-blue;
+  text-decoration: none;
+  font-size: 1.2rem;
+
+  &:hover {
+    color: $dark;
+  }
 }
 
-h1, h2, h3, h4, h5, h6 {
-    text-transform: uppercase;
-    letter-spacing: 10px;
-    font-family: $heading;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  font-family: $heading;
 }
 
 h1 {
-    font-size: 3rem;
+  font-size: 3rem;
 
-    @include tablet {
-        font-size: 1.2rem;
-    }
+  @include tablet {
+    font-size: 1.2rem;
+  }
 }
 
 h2 {
-    font-size: 2rem;
-    @include tablet {
-        font-size: 1rem;
-    }
+  font-size: 2rem;
+  @include tablet {
+    font-size: 1rem;
+  }
 }
 
 h3 {
-    font-size: 2rem;
-    color: $yellow;
-    @include tablet {
-        font-size: 1rem;
-    }
+  font-size: 2rem;
+  color: $yellow;
+  @include tablet {
+    font-size: 1rem;
+  }
 }
 
 span {
-    font-size: 1.2rem;
-    letter-spacing: 4px;
-    font-family: $fancy;
+  font-size: 1.2rem;
+  letter-spacing: 4px;
+  font-family: $fancy;
 }
-
 
 .flex {
-    display: flex;
-    flex-direction: row;
-    gap: 100px;
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
 
-    > * {
-        flex: 1 50%;
-        height: auto;
-        align-items: center;
-    }
+  > * {
+    flex: 1 50%;
+    height: auto;
+    align-items: center;
+  }
 
-    @include tablet {
-        flex-direction: column;
-    }
+  @include tablet {
+    flex-direction: column;
+  }
 }
 
-
 .img-placeholder-long {
-    background-color: $dark;
-    width: 100%;
-    min-height: 200px;
-    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.123);
-    margin: 100px 0;
+  background-color: $dark;
+  width: 100%;
+  min-height: 200px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.123);
+  margin: 100px 0;
 }
 
 .align-right {
-    text-align: right;
+  text-align: right;
 
-    @include tablet {
-        text-align: center;
-    }
+  @include tablet {
+    text-align: center;
+  }
 }
 
 // Form styling
 input {
-    margin-bottom: 50px;
-    margin-top: 10px;
-    padding: 10px 20px;
-    border-radius: 8px;
-    border: 2px solid $dark;
-    background-color: $light;
-    font-size: 1.2rem;
+  margin-bottom: 50px;
+  margin-top: 10px;
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: 2px solid $dark;
+  background-color: $light;
+  font-size: 1.2rem;
 }
 
 textarea {
-    margin-bottom: 50px;
-    margin-top: 10px;
-    padding: 10px 20px;
-    border-radius: 8px;
-    border: 2px solid $dark;
-    background-color: $light;
-    font-size: 1.2rem;
+  margin-bottom: 50px;
+  margin-top: 10px;
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: 2px solid $dark;
+  background-color: $light;
+  font-size: 1.2rem;
 }
 
 label {
-    text-transform: uppercase;
-    letter-spacing: 5px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
 }
 
 // Lists
 ul {
-    li {
-        font-size: 1.6rem;
-        text-transform: capitalize;
-        color: $dark-blue;
-        letter-spacing: 8px;
-    }
+  li {
+    font-size: 1.6rem;
+    text-transform: capitalize;
+    color: $dark-blue;
+    letter-spacing: 8px;
+  }
 }
 
 .social {
-    display: flex;
-    gap: 20px;
-    margin-top: 20px;
-    justify-content: center;
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+  justify-content: center;
 
-    * > {
-        flex: 1 25%;
-    }
+  * > {
+    flex: 1 25%;
+  }
 }
 
 // Icons
 .icon-light {
-    color: $light;
+  color: $light;
 }
 
 .icon-social {
-    color: $light;
-    width: 50px;
-    height: auto;
-    transition: 0.5s ease-in-out;
+  color: $light;
+  width: 50px;
+  height: auto;
+  transition: 0.5s ease-in-out;
 
-    &:hover {
-        color: $yellow;
-        transition: 0.5s ease-in-out;
-    }
+  &:hover {
+    color: $yellow;
+    transition: 0.5s ease-in-out;
+  }
 }
