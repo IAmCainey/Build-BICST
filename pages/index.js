@@ -14,7 +14,6 @@ import profileLaura from "../public/images/profiles/laura.webp";
 
 // Next Imports
 import Head from "next/head";
-import Link from "next/link";
 import Image from "next/image";
 
 function scroll() {
