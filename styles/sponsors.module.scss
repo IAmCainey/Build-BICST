@@ -1,31 +1,29 @@
 // Styling
-@import './var';
-@import './mixins';
-
+@import "./var";
+@import "./mixins";
 
 .sponsors {
-    padding: 100px 10px;
-    display: flex;
-    justify-content: space-between;
-    max-width: 70%;
-    margin: auto;
-    align-content: center;
-    align-items: center;
+  padding: 50px 10px;
+  display: flex;
+  justify-content: space-between;
+  max-width: 70%;
+  margin: auto;
+  align-content: center;
+  align-items: center;
 
-    @include tablet {
-        display: none;
-    }
-    
-    
-    .img {
-        width: 150px;
-        height: auto;
-        -webkit-filter: grayscale(100%);
-        filter: grayscale(100%);
+  @include tablet {
+    display: none;
+  }
 
-            &:hover {
-            -webkit-filter: grayscale(0);
-            filter: grayscale(0);
-            }
+  .img {
+    max-width: 100px;
+    height: auto;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+
+    &:hover {
+      -webkit-filter: grayscale(0);
+      filter: grayscale(0);
     }
+  }
 }
