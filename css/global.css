@@ -89,7 +89,8 @@
   counter-reset: masonry;
 }
 
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
@@ -117,7 +118,12 @@ a:hover {
   color: #1A202C;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   text-transform: uppercase;
   letter-spacing: 10px;
   font-family: "Anton", sans-serif;
