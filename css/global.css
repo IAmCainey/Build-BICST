@@ -281,4 +281,15 @@ ul li {
   -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
 }
+
+.notice h2 {
+  font-size: 2rem;
+  background: #F6E05E;
+  color: #1A202C;
+  padding: 20px;
+}
+
+.notice p {
+  font-size: 1.2rem;
+}
 /*# sourceMappingURL=global.css.map */

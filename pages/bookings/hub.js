@@ -30,16 +30,31 @@ export default function Hub() {
 
       <div className="flex">
         <div>
+          <div className="notice">
+            <h2>Please Note</h2>
+            <p>When booking a party at the hub the follow rule apply.</p>
+            <p>
+              You have access to the hub one hour prior to your booking time to
+              setup and do what you need to do. You also have one hour after to
+              clean and be out ready for any other events.
+              <br />
+              If more time is requied you will need to book the hall further and
+              pay for the time.
+            </p>
+            <p></p>
+          </div>
           <h2>Hub Booking</h2>
           <p>
-            Befor booking the hub, please take the time to read and understand
+            Before booking the hub, please take the time to read and understand
             the terms set out by the trust.
           </p>
           <Link href="/terms">
             <a>Terms & Conditions</a>
           </Link>
 
-          <p>Please do not use this bookings page for the following:</p>
+          <p>
+            Please <b>do not</b> use this bookings page for the following:
+          </p>
           <ul>
             <li>Weddings</li>
             <li>Christenings</li>

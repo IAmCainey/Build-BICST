@@ -1,47 +1,46 @@
 // Imports
-@import './mixins';
-@import './var';
-
+@import "./mixins";
+@import "./var";
 
 .container {
-    display: flex;
-    gap: 20px;
-    width: 100%;
-    align-items: flex-start;
-    align-content: flex-start;
+  display: flex;
+  gap: 20px;
+  width: 100%;
+  align-items: flex-start;
+  align-content: flex-start;
 
-    @include tablet {
-        flex-direction: column;
-    }
+  @include tablet {
+    flex-direction: column;
+  }
 }
 
 .card {
-border: solid rgba(0, 0, 0, 0.445) 1px;
-border-radius: 10px;
-text-align: center;
-height: auto;
-position: relative;
-overflow: hidden;
-flex-wrap: wrap;
-flex: 1 33.33%;
+  border: solid rgba(0, 0, 0, 0.445) 1px;
+  border-radius: 10px;
+  text-align: center;
+  height: auto;
+  position: relative;
+  overflow: hidden;
+  flex-wrap: wrap;
+  flex: 1 33.33%;
 
-    @include tablet {
-        max-width: 100%;
-    }
+  @include tablet {
+    max-width: 100%;
+  }
 }
 
 .img {
-    width: 100%;
-    opacity: 0.5;
-    transition: .5s ease-in-out;
+  width: 100%;
+  opacity: 0.5;
+  transition: 0.5s ease-in-out;
 
-    &:hover {
-        opacity: 1;
-        transition: .5s ease-in-out;
-        transform: scale(1.5);
-    }
+  &:hover {
+    opacity: 1;
+    transition: 0.5s ease-in-out;
+    transform: scale(1.5);
+  }
 }
 
-.text  {
-    font-size: 1rem;
+.text {
+  font-size: 1rem;
 }
