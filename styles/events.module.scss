@@ -20,6 +20,7 @@
   height: fit-content;
   overflow: hidden;
   border: solid 1px rgb(233, 233, 233);
+  transition: all 0.5s;
 
   .title {
     text-align: center;
@@ -38,6 +39,10 @@
     justify-content: space-between;
     text-align: center;
   }
+
+  &:hover {
+    box-shadow: 10px 10px 0 #000;
+  }
 }
 
 .link {
@@ -53,14 +58,21 @@
 
 .date {
   display: block;
-  background: yellow;
-  max-width: 100px;
+  color: $light;
+  background-color: $dark;
+  width: fit-content;
+  border-radius: 15px;
   font-size: 1.2rem;
-  text-align: center;
   height: auto;
   position: absolute;
-  right: 0;
+  right: 10px;
   bottom: 0;
+  padding: 10px 15px;
+
+  @include tablet {
+    position: relative;
+    margin-left: 10px;
+  }
 }
 
 .single {
