@@ -13,11 +13,17 @@ export default function Events({ events }) {
       <h1>Upcoming events</h1>
       <ul className={style.cards}>
         {events.map((event, i) => (
-          <li className={style.card} key={i}>
-            <h2>{event.title}</h2>
-            <p className={style.description}>{event.description}</p>
-            <p className={style.date}>{event.eventDate}</p>
-          </li>
+          <div key={i}>
+            <Link href={`/events/${event.slug}`}>
+              <a>
+                <li className={style.card}>
+                  <h2>{event.title}</h2>
+                  <p className={style.description}>{event.description}</p>
+                  <p className={style.date}>{event.eventDate}</p>
+                </li>
+              </a>
+            </Link>
+          </div>
         ))}
       </ul>
     </Layout>
@@ -28,7 +34,7 @@ export async function getStaticProps() {
   const { data } = await client.query({
     query: gql`
       query {
-        events(orderBy: eventDate_DESC) {
+        events(orderBy: eventDate_ASC) {
           title
           slug
           description

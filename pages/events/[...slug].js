@@ -32,14 +32,25 @@ export default function EventsPage({ event }) {
         </div>
 
         <div className={style.right}>
-          <p className={style.eventDate}>{event.eventDate}</p>
+          <p className={style.eventDate}>
+            <AiOutlineCalendar /> {event.eventDate}
+          </p>
 
           <ul className={style.eventList}>
-            <li className={style.eventInfo}>{event.contactName}</li>
-            <li className={style.eventInfo}>{event.contactNumber}</li>
+            <li className={style.eventInfo}>
+              <AiOutlineClockCircle /> {event.startTime} - {event.finishTime}
+            </li>
+            <li className={style.eventInfo}>
+              <AiOutlineUser /> {event.contactName}
+            </li>
+            <li className={style.eventInfo}>
+              <AiOutlinePhone /> {event.contactNumber}
+            </li>
             <li className={style.eventInfo}>
               <Link href={`{event.contactEmail}`}>
-                <a>{event.contactEmail}</a>
+                <a>
+                  <AiOutlineMail /> {event.contactEmail}
+                </a>
               </Link>
             </li>
           </ul>
@@ -81,6 +92,8 @@ export async function getStaticProps({ params }) {
           contactName
           contactNumber
           contactEmail
+          startTime
+          finishTime
         }
       }
     `,
