@@ -25,18 +25,25 @@ export default function EventsPage({ event }) {
           <h1>{event.title}</h1>
 
           <div dangerouslySetInnerHTML={{ __html: event.body.html }}></div>
-          <p>{event.eventDate}</p>
-          <p>
-            Contact Name : <b>{event.contactName}</b> | Contact Number{" "}
-            <b>{event.contactNumber}</b>
-          </p>
 
           <Link href="/events">
             <a className="btn">Link Back</a>
           </Link>
         </div>
 
-        <div className={style.right}></div>
+        <div className={style.right}>
+          <p className={style.eventDate}>{event.eventDate}</p>
+
+          <ul className={style.eventList}>
+            <li className={style.eventInfo}>{event.contactName}</li>
+            <li className={style.eventInfo}>{event.contactNumber}</li>
+            <li className={style.eventInfo}>
+              <Link href={`{event.contactEmail}`}>
+                <a>{event.contactEmail}</a>
+              </Link>
+            </li>
+          </ul>
+        </div>
       </div>
     </Layout>
   );

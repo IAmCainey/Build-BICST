@@ -89,6 +89,11 @@
   counter-reset: masonry;
 }
 
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 html,
 body {
   margin: 0;
@@ -238,6 +243,10 @@ textarea {
 label {
   text-transform: uppercase;
   letter-spacing: 5px;
+}
+
+ul {
+  padding: 0;
 }
 
 ul li {
