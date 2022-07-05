@@ -27,6 +27,7 @@
     padding: 20px;
     display: flex;
     flex-direction: column;
+    transition: all 300ms;
 
     .eventTitle {
       color: $dark;
@@ -42,6 +43,10 @@
       color: $dark;
       letter-spacing: 1rem;
       padding-bottom: 10px;
+    }
+
+    &:hover {
+      box-shadow: 0 10px 0 $yellow;
     }
   }
 }
