@@ -4,7 +4,7 @@
 
  - NextJS
  - GraphQL
- - WordPress / GrapgCMS
+ - Apollo
 
 Running on Vercel! 🥳:
 
