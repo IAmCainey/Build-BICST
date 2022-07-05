@@ -20,6 +20,35 @@
     min-height: 100vh;
     display: flex;
   }
+
+  .event {
+    background-color: $light;
+    border-radius: 8px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+
+    .eventTitle {
+      color: $dark;
+      font-size: 1.6rem;
+      text-transform: capitalize;
+    }
+
+    .eventDescription {
+      font-size: 1.4rem;
+      color: $dark-blue;
+    }
+    .eventDate {
+      color: $dark;
+      letter-spacing: 1rem;
+      padding-bottom: 10px;
+    }
+  }
+}
+
+.nextEvent {
+  color: $yellow;
+  font-size: 1.6rem;
 }
 
 .container {

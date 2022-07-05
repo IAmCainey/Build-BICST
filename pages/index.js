@@ -6,6 +6,9 @@ import cardStyle from "../css/cards.module.css";
 // Components
 import Sponsors from "../components/sponsors";
 import { GiBullseye, GiSunglasses } from "react-icons/gi";
+import { gql } from "@apollo/client";
+import client from "../apolloClient";
+import Link from "next/link";
 
 // Profile Images
 import profileRob from "../public/images/profiles/rob.jpg";
@@ -20,7 +23,7 @@ function scroll() {
   document.getElementById("sports").scrollInToView();
 }
 
-export default function HomePage() {
+export default function HomePage({ events }) {
   const pageTitle = "BICST - Parties, Events and more";
   const description =
     "Barrow Island Community Sports Trust is a place for the community to come together and have fun.";
@@ -57,10 +60,23 @@ export default function HomePage() {
                 </span>
               </div>
               <div className="centered">
-                <div></div>
+                <h2 className={style.nextEvent}>Next Event</h2>
+                {events.map((event, i) => (
+                  <div className={style.event} key={i}>
+                    <h2 className={style.eventTitle}>{event.title}</h2>
+                    <p className={style.eventDescription}>
+                      {event.description}
+                    </p>
+                    <span className={style.eventDate}>{event.eventDate}</span>
+                    <Link href={`/events/${event.slug}`}>
+                      <a>
+                        <button className="btn">View Event</button>
+                      </a>
+                    </Link>
+                  </div>
+                ))}
               </div>
             </div>
-            <div></div>
           </div>
         </div>
       </section>
@@ -184,4 +200,25 @@ export default function HomePage() {
       <Sponsors />
     </Layout>
   );
+}
+
+export async function getStaticProps() {
+  const { data } = await client.query({
+    query: gql`
+      query {
+        events(orderBy: eventDate_ASC, first: 1) {
+          title
+          slug
+          description
+          eventDate
+        }
+      }
+    `,
+  });
+  const { events } = data;
+  return {
+    props: {
+      events,
+    },
+  };
 }
