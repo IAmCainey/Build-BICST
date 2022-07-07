@@ -19,7 +19,7 @@ export default function Events({ events }) {
                 <li className={style.card}>
                   <h2>{event.title}</h2>
                   <p className={style.description}>{event.description}</p>
-                  <p className={style.date}>{event.eventDate}</p>
+                  <p className={style.date}>Event Date : {event.eventDate}</p>
                 </li>
               </a>
             </Link>
