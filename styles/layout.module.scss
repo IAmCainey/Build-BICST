@@ -1,13 +1,13 @@
 // Imports
-@import './mixins';
-@import './var';
+@import "./mixins";
+@import "./var";
 
 .container {
-    margin: auto;
-    width: 80%;
-    position: relative;
+  margin: auto;
+  width: 80%;
+  position: relative;
 
-    @include tablet {
-        max-width: auto;
-    }
+  @include tablet {
+    width: 100%;
+  }
 }
