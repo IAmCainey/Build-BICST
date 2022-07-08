@@ -1,22 +1,48 @@
 // Components
-import Footer from '../components/footer'
-import TopNav from '../components/topnav'
-import MobileMenu from '../components/mobilemenu'
+import Footer from "../components/footer";
+import TopNav from "../components/topnav";
+import MobileMenu from "../components/mobilemenu";
 
-import CookieConsent from '../components/cookies'
+import { useEffect, useState } from "react";
 
-// Styling
+import { ImArrowUp } from "react-icons/im";
 
-const LandingLayout = props => {
-    return (
-        <div>
-            <TopNav />
-            <MobileMenu />
-            {props.children}
-            <Footer />
-            <CookieConsent />
-        </div>
-    )
-}
+import CookieConsent from "../components/cookies";
 
-export default LandingLayout
+// Scroll to top
+const LandingLayout = (props) => {
+  const [showBtn, setShowBtn] = useState(false);
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      if (window.pageYOffset > 300) {
+        setShowBtn(true);
+      } else {
+        setShowBtn(false);
+      }
+    });
+  }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
+  return (
+    <div>
+      <TopNav />
+      <MobileMenu />
+      {props.children}
+      <Footer />
+      <CookieConsent />
+      {showBtn && (
+        <button onClick={scrollToTop} className="scrollToTop">
+          <ImArrowUp />
+        </button>
+      )}
+    </div>
+  );
+};
+
+export default LandingLayout;
