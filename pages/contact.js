@@ -1,6 +1,7 @@
 // Components
 import Head from "next/head";
 import Layout from "../layouts/main";
+import Link from "next/link";
 
 // Styling
 import style from "../css/contact.module.css";
@@ -28,30 +29,31 @@ export default function Contact() {
       </Head>
 
       <div>
-        <h1>contact us</h1>
-        <div className={style.contactCards}>
-          <div className={style.card}>
-            <span className={style.span}>by phone : </span>
-            <em className={style.em}>01229 820470</em>
-          </div>
-          <div className={style.card}>
-            <span className={style.span}>by email : </span>
-            <em className={style.em}>bicstrust@gmail.com</em>
-          </div>
-          <div className={style.card}>
-            <span className={style.span}>by letter </span>
-            <p>
-              <em className={style.em}>
-                Barrow Island Community Sports Trust ltd. Cavendish Park, Barrow
-                Island, Cumbria.
-              </em>
-            </p>
-          </div>
-          <div className={style.card}>
-            <span className={style.span}>by social </span>
-            <em className={style.em}></em>
-          </div>
-        </div>
+        <h2>contact us</h2>
+        <p>
+          <span className={style.span}>by phone : </span>
+          <em className={style.em}>01229 820470</em>
+        </p>
+        <p>
+          <span className={style.span}>by email : </span>
+          <em className={style.em}>
+            <Link href="mailto:bicstrust@gmail.com">
+              <a>bicstrust@gmail.com</a>
+            </Link>
+          </em>
+        </p>
+        <p>
+          <span className={style.span}>by letter </span>
+          <br />
+          <em className={style.em}>
+            Barrow Island Community Sports Trust ltd. <br />
+            Cavendish Park, Barrow Island, Cumbria.
+          </em>
+        </p>
+        <p>
+          <span className={style.span}>by social </span>
+          <em className={style.em}></em>
+        </p>
       </div>
     </Layout>
   );
