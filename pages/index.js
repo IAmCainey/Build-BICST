@@ -19,12 +19,8 @@ import profileLaura from "../public/images/profiles/laura.webp";
 import Head from "next/head";
 import Image from "next/image";
 
-function scroll() {
-  document.getElementById("sports").scrollInToView();
-}
-
 export default function HomePage({ events }) {
-  const pageTitle = "BICST - Parties, Events and more";
+  const pageTitle = "BICST - Parties and community events";
   const description =
     "Barrow Island Community Sports Trust is a place for the community to come together and have fun.";
   const twitterHandle = "@bicstrust";

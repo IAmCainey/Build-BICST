@@ -1,101 +1,96 @@
-@import './mixins';
-
+@import "./mixins";
 
 // colours
-$yellow:    #F6E05E;
-$light:     #E2E8F0;
-$dark:      #1A202C;
-$dark-blue: #4A5568;
+$yellow: #f6e05e;
+$light: #e2e8f0;
+$dark: #1a202c;
+$dark-blue: #4a5568;
 
 // Fonts
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Cairo&family=Indie+Flower&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Cairo&family=Indie+Flower&display=swap");
 
-$heading: 'Anton', sans-serif;
-$text: 'Cairo', sans-serif;
-$fancy: 'Indie Flower', cursive;
-
+$heading: "Anton", sans-serif;
+$text: "Cairo", sans-serif;
+$fancy: "Indie Flower", cursive;
 
 .btn {
-    border-radius: 8px;
-    border: solid 1px $dark;
-    padding: 14px 18px;
-    font-size: 1.2rem;
-    text-transform: uppercase;
-    text-decoration: none;
-    background-color: $dark;
-    color: $yellow;
-    box-shadow: 0 0 10px $dark;
-    transition: all ease-in-out .3s;
+  border-radius: 8px;
+  border: solid 1px $dark;
+  padding: 14px 18px;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: $dark;
+  color: $yellow;
+  box-shadow: 0 0 10px $dark;
+  transition: all ease-in-out 0.3s;
 
-    
-    &:hover {
-        cursor: pointer;
-        background-color: $yellow;
-        color: $dark;
-        transition: all ease-in-out .3s;
-        box-shadow: 0 0 10px $yellow;
-    }
-}
-
-.btn-reverse{
-    border-radius: 8px;
-    border: solid 1px $yellow;
-    padding: 14px 18px;
-    font-size: 1.2rem;
-    text-transform: uppercase;
-    text-decoration: none;
+  &:hover {
+    cursor: pointer;
     background-color: $yellow;
     color: $dark;
+    transition: all ease-in-out 0.3s;
     box-shadow: 0 0 10px $yellow;
-    transition: all ease-in-out .3s;
+  }
+}
 
-    
-    &:hover {
-        cursor: pointer;
-        background-color: $dark;
-        color: $light;
-        transition: all ease-in-out .3s;
-        box-shadow: 0 0 10px $dark-blue;
-    }
+.btn-reverse {
+  border-radius: 8px;
+  border: solid 1px $yellow;
+  padding: 14px 18px;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: $yellow;
+  color: $dark;
+  box-shadow: 0 0 10px $yellow;
+  transition: all ease-in-out 0.3s;
+
+  &:hover {
+    cursor: pointer;
+    background-color: $dark;
+    color: $light;
+    transition: all ease-in-out 0.3s;
+    box-shadow: 0 0 10px $dark-blue;
+  }
 }
 
 // Text & fonts
 .light-text {
-    color: $light;
+  color: $light;
 }
 
 .content {
-    margin: 100px 0;
+  margin: 100px 0;
 }
-
 
 // Margins & Paddings
 // my-md = margin y medium
 .my-md {
-    margin: 50px 0;
+  margin: 50px 0;
 }
 
 // tm-lg = top margin large
 .tm-lg {
-    margin-top: 100px;
+  margin-top: 100px;
 }
 
 .lm-md {
-    margin-left: 20px;
+  margin-left: 20px;
 }
 
 .text-center {
-    text-align: center;
+  text-align: center;
 }
 
 // Layout
 
 .container {
-    width: 70%;
-    padding: 100px 10px;
-    margin: auto;
+  width: 80%;
+  padding: 100px 10px;
+  margin: auto;
 
-    @include tablet {
-        width: auto;
-    }
+  @include tablet {
+    width: auto;
+  }
 }

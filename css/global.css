@@ -1,56 +1,56 @@
 @import url("https://fonts.googleapis.com/css2?family=Anton&family=Cairo&family=Indie+Flower&display=swap");
 .btn {
   border-radius: 8px;
-  border: solid 1px #1A202C;
+  border: solid 1px #1a202c;
   padding: 14px 18px;
   font-size: 1.2rem;
   text-transform: uppercase;
   text-decoration: none;
-  background-color: #1A202C;
-  color: #F6E05E;
-  -webkit-box-shadow: 0 0 10px #1A202C;
-          box-shadow: 0 0 10px #1A202C;
-  -webkit-transition: all ease-in-out .3s;
-  transition: all ease-in-out .3s;
+  background-color: #1a202c;
+  color: #f6e05e;
+  -webkit-box-shadow: 0 0 10px #1a202c;
+          box-shadow: 0 0 10px #1a202c;
+  -webkit-transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s;
 }
 
 .btn:hover {
   cursor: pointer;
-  background-color: #F6E05E;
-  color: #1A202C;
-  -webkit-transition: all ease-in-out .3s;
-  transition: all ease-in-out .3s;
-  -webkit-box-shadow: 0 0 10px #F6E05E;
-          box-shadow: 0 0 10px #F6E05E;
+  background-color: #f6e05e;
+  color: #1a202c;
+  -webkit-transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s;
+  -webkit-box-shadow: 0 0 10px #f6e05e;
+          box-shadow: 0 0 10px #f6e05e;
 }
 
 .btn-reverse {
   border-radius: 8px;
-  border: solid 1px #F6E05E;
+  border: solid 1px #f6e05e;
   padding: 14px 18px;
   font-size: 1.2rem;
   text-transform: uppercase;
   text-decoration: none;
-  background-color: #F6E05E;
-  color: #1A202C;
-  -webkit-box-shadow: 0 0 10px #F6E05E;
-          box-shadow: 0 0 10px #F6E05E;
-  -webkit-transition: all ease-in-out .3s;
-  transition: all ease-in-out .3s;
+  background-color: #f6e05e;
+  color: #1a202c;
+  -webkit-box-shadow: 0 0 10px #f6e05e;
+          box-shadow: 0 0 10px #f6e05e;
+  -webkit-transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s;
 }
 
 .btn-reverse:hover {
   cursor: pointer;
-  background-color: #1A202C;
-  color: #E2E8F0;
-  -webkit-transition: all ease-in-out .3s;
-  transition: all ease-in-out .3s;
-  -webkit-box-shadow: 0 0 10px #4A5568;
-          box-shadow: 0 0 10px #4A5568;
+  background-color: #1a202c;
+  color: #e2e8f0;
+  -webkit-transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s;
+  -webkit-box-shadow: 0 0 10px #4a5568;
+          box-shadow: 0 0 10px #4a5568;
 }
 
 .light-text {
-  color: #E2E8F0;
+  color: #e2e8f0;
 }
 
 .content {
@@ -74,7 +74,7 @@
 }
 
 .container {
-  width: 70%;
+  width: 80%;
   padding: 100px 10px;
   margin: auto;
 }
@@ -114,13 +114,13 @@ p {
 }
 
 a {
-  color: #4A5568;
+  color: #4a5568;
   text-decoration: none;
   font-size: 1.2rem;
 }
 
 a:hover {
-  color: #1A202C;
+  color: #1a202c;
 }
 
 h1,
@@ -156,7 +156,7 @@ h2 {
 
 h3 {
   font-size: 2rem;
-  color: #F6E05E;
+  color: #f6e05e;
 }
 
 @media (max-width: 800px) {
@@ -202,7 +202,7 @@ span {
 }
 
 .img-placeholder-long {
-  background-color: #1A202C;
+  background-color: #1a202c;
   width: 100%;
   min-height: 200px;
   -webkit-box-shadow: 0 10px 10px rgba(0, 0, 0, 0.123);
@@ -225,8 +225,8 @@ input {
   margin-top: 10px;
   padding: 10px 20px;
   border-radius: 8px;
-  border: 2px solid #1A202C;
-  background-color: #E2E8F0;
+  border: 2px solid #1a202c;
+  background-color: #e2e8f0;
   font-size: 1.2rem;
 }
 
@@ -235,8 +235,8 @@ textarea {
   margin-top: 10px;
   padding: 10px 20px;
   border-radius: 8px;
-  border: 2px solid #1A202C;
-  background-color: #E2E8F0;
+  border: 2px solid #1a202c;
+  background-color: #e2e8f0;
   font-size: 1.2rem;
 }
 
@@ -252,7 +252,7 @@ ul {
 ul li {
   font-size: 1.6rem;
   text-transform: capitalize;
-  color: #4A5568;
+  color: #4a5568;
   letter-spacing: 8px;
 }
 
@@ -274,11 +274,11 @@ ul li {
 }
 
 .icon-light {
-  color: #E2E8F0;
+  color: #e2e8f0;
 }
 
 .icon-social {
-  color: #E2E8F0;
+  color: #e2e8f0;
   width: 50px;
   height: auto;
   -webkit-transition: 0.5s ease-in-out;
@@ -286,15 +286,15 @@ ul li {
 }
 
 .icon-social:hover {
-  color: #F6E05E;
+  color: #f6e05e;
   -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
 }
 
 .notice h2 {
   font-size: 2rem;
-  background: #F6E05E;
-  color: #1A202C;
+  background: #f6e05e;
+  color: #1a202c;
   padding: 20px;
 }
 

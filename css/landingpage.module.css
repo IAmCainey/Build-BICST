@@ -1,56 +1,56 @@
 @import url("https://fonts.googleapis.com/css2?family=Anton&family=Cairo&family=Indie+Flower&display=swap");
 .btn {
   border-radius: 8px;
-  border: solid 1px #1A202C;
+  border: solid 1px #1a202c;
   padding: 14px 18px;
   font-size: 1.2rem;
   text-transform: uppercase;
   text-decoration: none;
-  background-color: #1A202C;
-  color: #F6E05E;
-  -webkit-box-shadow: 0 0 10px #1A202C;
-          box-shadow: 0 0 10px #1A202C;
-  -webkit-transition: all ease-in-out .3s;
-  transition: all ease-in-out .3s;
+  background-color: #1a202c;
+  color: #f6e05e;
+  -webkit-box-shadow: 0 0 10px #1a202c;
+          box-shadow: 0 0 10px #1a202c;
+  -webkit-transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s;
 }
 
 .btn:hover {
   cursor: pointer;
-  background-color: #F6E05E;
-  color: #1A202C;
-  -webkit-transition: all ease-in-out .3s;
-  transition: all ease-in-out .3s;
-  -webkit-box-shadow: 0 0 10px #F6E05E;
-          box-shadow: 0 0 10px #F6E05E;
+  background-color: #f6e05e;
+  color: #1a202c;
+  -webkit-transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s;
+  -webkit-box-shadow: 0 0 10px #f6e05e;
+          box-shadow: 0 0 10px #f6e05e;
 }
 
 .btn-reverse {
   border-radius: 8px;
-  border: solid 1px #F6E05E;
+  border: solid 1px #f6e05e;
   padding: 14px 18px;
   font-size: 1.2rem;
   text-transform: uppercase;
   text-decoration: none;
-  background-color: #F6E05E;
-  color: #1A202C;
-  -webkit-box-shadow: 0 0 10px #F6E05E;
-          box-shadow: 0 0 10px #F6E05E;
-  -webkit-transition: all ease-in-out .3s;
-  transition: all ease-in-out .3s;
+  background-color: #f6e05e;
+  color: #1a202c;
+  -webkit-box-shadow: 0 0 10px #f6e05e;
+          box-shadow: 0 0 10px #f6e05e;
+  -webkit-transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s;
 }
 
 .btn-reverse:hover {
   cursor: pointer;
-  background-color: #1A202C;
-  color: #E2E8F0;
-  -webkit-transition: all ease-in-out .3s;
-  transition: all ease-in-out .3s;
-  -webkit-box-shadow: 0 0 10px #4A5568;
-          box-shadow: 0 0 10px #4A5568;
+  background-color: #1a202c;
+  color: #e2e8f0;
+  -webkit-transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s;
+  -webkit-box-shadow: 0 0 10px #4a5568;
+          box-shadow: 0 0 10px #4a5568;
 }
 
 .light-text {
-  color: #E2E8F0;
+  color: #e2e8f0;
 }
 
 .content {
@@ -74,7 +74,7 @@
 }
 
 .container {
-  width: 70%;
+  width: 80%;
   padding: 100px 10px;
   margin: auto;
 }
@@ -86,9 +86,9 @@
 }
 
 .hero {
-  background-color: #1A202C;
+  background-color: #1a202c;
   min-height: 100vh;
-  color: #E2E8F0;
+  color: #e2e8f0;
   background-image: url("../public/images/facilities/IMG_0830.webp");
   background-repeat: no-repeat;
   background-position: center center;
@@ -111,7 +111,7 @@
 }
 
 .hero .event {
-  background-color: #E2E8F0;
+  background-color: #e2e8f0;
   border-radius: 8px;
   padding: 20px;
   display: -webkit-box;
@@ -126,29 +126,29 @@
 }
 
 .hero .event .eventTitle {
-  color: #1A202C;
+  color: #1a202c;
   font-size: 1.6rem;
   text-transform: capitalize;
 }
 
 .hero .event .eventDescription {
   font-size: 1.4rem;
-  color: #4A5568;
+  color: #4a5568;
 }
 
 .hero .event .eventDate {
-  color: #1A202C;
+  color: #1a202c;
   letter-spacing: 1rem;
   padding-bottom: 10px;
 }
 
 .hero .event:hover {
-  -webkit-box-shadow: 0 10px 0 #F6E05E;
-          box-shadow: 0 10px 0 #F6E05E;
+  -webkit-box-shadow: 0 10px 0 #f6e05e;
+          box-shadow: 0 10px 0 #f6e05e;
 }
 
 .nextEvent {
-  color: #F6E05E;
+  color: #f6e05e;
   font-size: 1.6rem;
 }
 
@@ -196,21 +196,21 @@
 }
 
 .title {
-  color: #E2E8F0;
+  color: #e2e8f0;
   letter-spacing: 10px;
   font-size: 3rem;
 }
 
 .span {
-  color: #F6E05E;
+  color: #f6e05e;
   font-size: 1.8rem;
   letter-spacing: 5px;
 }
 
 .mission {
   padding: 100px 10px;
-  background-color: #4A5568;
-  color: #E2E8F0;
+  background-color: #4a5568;
+  color: #e2e8f0;
 }
 
 .theTeam {

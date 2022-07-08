@@ -1,56 +1,56 @@
 @import url("https://fonts.googleapis.com/css2?family=Anton&family=Cairo&family=Indie+Flower&display=swap");
 .btn {
   border-radius: 8px;
-  border: solid 1px #1A202C;
+  border: solid 1px #1a202c;
   padding: 14px 18px;
   font-size: 1.2rem;
   text-transform: uppercase;
   text-decoration: none;
-  background-color: #1A202C;
-  color: #F6E05E;
-  -webkit-box-shadow: 0 0 10px #1A202C;
-          box-shadow: 0 0 10px #1A202C;
-  -webkit-transition: all ease-in-out .3s;
-  transition: all ease-in-out .3s;
+  background-color: #1a202c;
+  color: #f6e05e;
+  -webkit-box-shadow: 0 0 10px #1a202c;
+          box-shadow: 0 0 10px #1a202c;
+  -webkit-transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s;
 }
 
 .btn:hover {
   cursor: pointer;
-  background-color: #F6E05E;
-  color: #1A202C;
-  -webkit-transition: all ease-in-out .3s;
-  transition: all ease-in-out .3s;
-  -webkit-box-shadow: 0 0 10px #F6E05E;
-          box-shadow: 0 0 10px #F6E05E;
+  background-color: #f6e05e;
+  color: #1a202c;
+  -webkit-transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s;
+  -webkit-box-shadow: 0 0 10px #f6e05e;
+          box-shadow: 0 0 10px #f6e05e;
 }
 
 .btn-reverse {
   border-radius: 8px;
-  border: solid 1px #F6E05E;
+  border: solid 1px #f6e05e;
   padding: 14px 18px;
   font-size: 1.2rem;
   text-transform: uppercase;
   text-decoration: none;
-  background-color: #F6E05E;
-  color: #1A202C;
-  -webkit-box-shadow: 0 0 10px #F6E05E;
-          box-shadow: 0 0 10px #F6E05E;
-  -webkit-transition: all ease-in-out .3s;
-  transition: all ease-in-out .3s;
+  background-color: #f6e05e;
+  color: #1a202c;
+  -webkit-box-shadow: 0 0 10px #f6e05e;
+          box-shadow: 0 0 10px #f6e05e;
+  -webkit-transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s;
 }
 
 .btn-reverse:hover {
   cursor: pointer;
-  background-color: #1A202C;
-  color: #E2E8F0;
-  -webkit-transition: all ease-in-out .3s;
-  transition: all ease-in-out .3s;
-  -webkit-box-shadow: 0 0 10px #4A5568;
-          box-shadow: 0 0 10px #4A5568;
+  background-color: #1a202c;
+  color: #e2e8f0;
+  -webkit-transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s;
+  -webkit-box-shadow: 0 0 10px #4a5568;
+          box-shadow: 0 0 10px #4a5568;
 }
 
 .light-text {
-  color: #E2E8F0;
+  color: #e2e8f0;
 }
 
 .content {
@@ -74,7 +74,7 @@
 }
 
 .container {
-  width: 70%;
+  width: 80%;
   padding: 100px 10px;
   margin: auto;
 }
@@ -100,7 +100,7 @@
         -ms-flex-direction: row;
             flex-direction: row;
     padding: 0;
-    background-color: #1A202C;
+    background-color: #1a202c;
     position: fixed;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
@@ -125,7 +125,7 @@
 
 .burger {
   font-size: 2rem;
-  color: #E2E8F0;
+  color: #e2e8f0;
   right: 20px;
   position: relative;
 }
@@ -148,7 +148,7 @@
   top: 0;
   height: 100vh;
   width: 80vw;
-  background-color: #1A202C;
+  background-color: #1a202c;
   margin: 0;
   padding: 0;
   text-align: right;
@@ -172,18 +172,18 @@
 .dropdown .links .link {
   text-decoration: none;
   font-size: 1.4rem;
-  color: #E2E8F0;
+  color: #e2e8f0;
   font-family: "Anton", sans-serif;
   letter-spacing: 8px;
   text-transform: capitalize;
 }
 
 .dropdown .links .link::first-letter {
-  color: #F6E05E;
+  color: #f6e05e;
   font-size: 1.6rem;
 }
 
 .dropdown .links .link:hover {
-  color: #F6E05E;
+  color: #f6e05e;
 }
 /*# sourceMappingURL=mobilemenu.module.css.map */
